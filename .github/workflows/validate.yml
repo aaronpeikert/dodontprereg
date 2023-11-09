@@ -51,7 +51,7 @@ jobs:
         github-token: ${{secrets.GITHUB_TOKEN}}
         script: |
           const validationOutput = process.env.validation_output;
-          const errorMessage = validationOutput.split('\n').find(line => line.startsWith('Error:'));
+          const errorMessage = validationOutput.split('\n').find(line => line.startsWith('Error:  ['));
           if (errorMessage) {
             const issue_number = context.issue.number;
             const comment = { owner: context.repo.owner, repo: context.repo.repo, issue_number: issue_number, body: errorMessage };
