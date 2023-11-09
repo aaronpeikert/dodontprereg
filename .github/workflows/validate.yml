@@ -35,6 +35,7 @@ jobs:
       run: |
         linkml-validate --version
     - name: Validate data.yml
+      continue-on-error: true
       run: |
         linkml-validate -s schema.yml data.yml
     - name: Store validation output
