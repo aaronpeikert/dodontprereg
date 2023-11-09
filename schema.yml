@@ -1,0 +1,107 @@
+name: dodontprereg
+id: https://w3id.org/dodontprereg/advice
+
+prefixes:
+  linkml: https://w3id.org/linkml/
+  doi: 'https://doi.org/'
+
+imports:
+  - linkml:types
+default_range: string
+  
+classes:
+  Title:
+    aliases: ['display name']
+    exact_mappings:
+      - dct:title
+
+  Advice:
+    abstract: true
+    slots:
+      - id
+      - title
+      - tags
+    description: >-
+      Hi
+
+  Statement:
+    is_a: Advice
+    slots:
+      - please
+  Resource:
+    is_a: Advice
+    slots:
+      - url
+      - doi
+
+  Container:
+    tree_root: true
+    attributes:
+      statements: 
+        multivalued: true
+        inlined_as_list: true
+        range: Statement
+      resources:
+        multivalued: true
+        inlined_as_list: true
+        range: Resource
+
+enums:
+  TimePointTag:
+    permissible_values:
+      before preregistration:
+        description: You are in the middle of preparing the preregistration.
+      after preregistration:
+        description: Your already published the preregistration.
+      before data collection:
+        description: No data has been collected so far or you have no way of reaching it.
+      after data collection:
+        description: Either you have collected the data or the data is accessible of you (i.e. it is published).
+  TimeAvailibleTag:
+    permissible_values:
+      Hours
+      Weeks
+      Months
+  ResearchExperienceTag:
+    permissible_values:
+      Undergraduate
+      MSc
+      PhD
+      PostDoc
+  OtherTag:
+    permissible_values:
+      minimal:
+      neuro:
+        description: A family relationship where the two members have a parent on common
+      before:
+        description: A family relationship between offspring and their parent
+      after:
+        description: inverse of the PARENT_OF relationship
+  DoDont:
+    permissible_values:
+      do:
+        description: A family relationship where the two members have a parent on common
+      dont:
+        description: A family relationship where the two members have a parent on common
+
+slots:
+  id:
+    range: integer
+    identifier: true
+  tags:
+    multivalued: true
+    any_of:
+      - range: TimePointTag
+      - range: TimeAvailibleTag
+      - range: ResearchExperienceTag
+      - range: OtherTag
+    required: true
+  title:
+  please:
+    range: DoDont
+    required: true
+  doi:
+    range: string
+    pattern: "^10\\.\\d{4,9}/[-._;()/:A-Za-z0-9]+$"
+  url:
+    string_serialization: "https://doi.org/{doi}"
