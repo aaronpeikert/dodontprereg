@@ -1,0 +1,18 @@
+statements:
+  - id: 1
+    title: Don't be evil.
+    please: do
+    tags:
+    - minimal
+  - id: 2
+    title: Be clear about the objective.
+    tags:
+    - before data collection
+    please: dont
+resources:
+  - id: 1
+    title: A resource
+    tags:
+    - before preregistration
+    - not valid
+    doi: 10.1234/abcd
