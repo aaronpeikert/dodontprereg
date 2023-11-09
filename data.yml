@@ -14,5 +14,4 @@ resources:
     title: A resource
     tags:
     - before preregistration
-    - not valid
     doi: 10.1234/abcd
