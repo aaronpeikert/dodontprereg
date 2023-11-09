@@ -1,4 +1,4 @@
-name: Python Environment Setup
+name: Validate data.yml
 
 on:
   push:
