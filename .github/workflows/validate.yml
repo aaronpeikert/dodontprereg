@@ -41,8 +41,8 @@ jobs:
         echo "validation_output<<EOF" >> $GITHUB_ENV
         echo "$validation_output" >> $GITHUB_ENV
         echo "EOF" >> $GITHUB_ENV
+        echo "$validation_output"
         if [[ "$validation_output" == *ERROR:* ]]; then
-          echo "$validation_output"
           exit 1
         fi
     
