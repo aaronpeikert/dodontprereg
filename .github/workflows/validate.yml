@@ -43,8 +43,9 @@ jobs:
       with:
         github-token: ${{secrets.GITHUB_TOKEN}}
         script: |
-          const comment = { owner: context.repo.owner, repo: context.repo.repo, issue_number: issue_number,
-            body: `:white_check_mark: Validation suceeded` };
+          const issue_number = context.issue.number;
+          const commentBody = `:white_check_mark: Validation suceeded`;
+          const comment = { owner: context.repo.owner, repo: context.repo.repo, issue_number: issue_number, body: commentBody };
           github.rest.issues.createComment(comment);
     - name: Store failure output
       if: failure() && (github.event_name == 'pull_request')
