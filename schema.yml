@@ -72,17 +72,17 @@ enums:
     permissible_values:
       minimal:
       neuro:
-        description: A family relationship where the two members have a parent on common
+        description: A description.
       before:
-        description: A family relationship between offspring and their parent
+        description: A description.
       after:
-        description: inverse of the PARENT_OF relationship
+        description: A description.
   DoDont:
     permissible_values:
       do:
-        description: A family relationship where the two members have a parent on common
+        description: A description.
       dont:
-        description: A family relationship where the two members have a parent on common
+        description: A description.
 
 slots:
   id:
@@ -97,6 +97,7 @@ slots:
       - range: OtherTag
     required: true
   title:
+      required: true
   please:
     range: DoDont
     required: true
