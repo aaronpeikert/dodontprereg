@@ -4,6 +4,8 @@ statements:
     please: do
     tags:
     - minimal
+    - this is not a valid tag
+    this is not a valid field: true
   - id: 2
     title: Be clear about the objective.
     tags:
