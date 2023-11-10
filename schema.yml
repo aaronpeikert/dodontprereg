@@ -59,15 +59,15 @@ enums:
         description: Either you have collected the data or the data is accessible of you (i.e. it is published).
   TimeAvailibleTag:
     permissible_values:
-      Hours
-      Weeks
-      Months
+      Hours:
+      Weeks:
+      Months:
   ResearchExperienceTag:
     permissible_values:
-      Undergraduate
-      MSc
-      PhD
-      PostDoc
+      Undergraduate:
+      MSc:
+      PhD:
+      PostDoc:
   OtherTag:
     permissible_values:
       minimal:
