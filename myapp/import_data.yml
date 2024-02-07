@@ -1,0 +1,1246 @@
+statements:
+- id: 1
+  title: Aim to report all pre-registered analyses with the pre-registered approach.
+  please: do
+  tags:
+  - - After prereg
+    - Minimal
+    - Show always
+- id: 2
+  title: Be clear about the objective.
+  please: do
+  tags:
+  - - Before prereg
+    - Pre data collection
+    - Minimal
+    - Research clarity
+- id: 3
+  title: Be clear about what you do not know. (add example for this point)
+  please: do
+  tags:
+  - - During prereg-prep
+    - Conceptual consideration
+- id: 4
+  title: Be more detailed than you think you should be.
+  please: do
+  tags:
+  - - During prereg-prep
+    - Conceptual consideration
+    - Novice
+    - Beginner
+    - Intermediate
+    - Mix
+    - Verbose
+    - Research clarity
+- id: 5
+  title: Be prepared that it can take a good amount of time and energy.
+  please: do
+  tags:
+  - - Before prereg
+    - Pre data collection
+    - Beginner
+    - Time Management
+- id: 6
+  title: Be realistic.
+  please: do
+  tags:
+  - - During prereg-prep
+    - Conceptual consideration
+    - Hours available
+    - Good practice
+- id: 7
+  title: Be transparent about your prior engagement with the data.
+  please: do
+  tags:
+  - - Secondary data
+    - Post data collection
+- id: 8
+  title: Become familiar with preregistration formats.
+  please: do
+  tags:
+  - - Before prereg
+    - Pre data collection
+    - Novice
+    - Beginner
+    - Format selection
+- id: 9
+  title: Check all versions and the dates they were registered
+  please: do
+  tags:
+  - Quality-assessment
+- id: 10
+  title: Choose a format.
+  please: do
+  tags:
+  - - During prereg-prep
+    - Practical step
+    - Show always
+    - Minimal
+    - Format selection
+- id: 11
+  title: Choose a preregistration platform/journal.
+  please: do
+  tags:
+  - - During prereg-prep
+    - Practical step
+    - Show always
+    - Minimal
+    - Format selection
+- id: 12
+  title: Choose a template.
+  please: do
+  tags:
+  - - During prereg-prep
+    - Practical step
+    - Show always
+    - Minimal
+    - Hours available
+    - Format selection
+- id: 13
+  title: Clearly state in the manuscript that the study was preregistered, and link
+    to your preregistration from your manuscript.
+  please: do
+  tags:
+  - - After prereg
+    - Minimal
+    - Show always
+- id: 14
+  title: Consider simulating your data in order to develop the analysis plan and ensure
+    that your code works.
+  please: do
+  tags:
+  - - During prereg-prep
+    - Conceptual consideration
+    - Gold standard
+    - Intermediate
+    - Expert
+    - Pre data collection
+    - Days available
+    - Weeks available
+- id: 15
+  title: Describe data processing transparently and make it reproducible
+  please: do
+  tags:
+  - Show always
+- id: 16
+  title: Disclose where you expect to be flexible.
+  please: do
+  tags:
+  - - During prereg-prep
+    - Conceptual consideration
+- id: 17
+  title: Do describe target population, targeted sample size and sampling strategy
+  please: do
+  tags:
+  - Qualitative
+- id: 18
+  title: Do detail the sources you are planning to use for archives.
+  please: do
+  tags:
+  - Qualitative
+- id: 19
+  title: Do detail where the project will take place, when it will take place and
+    the sites being investigated.
+  please: do
+  tags:
+  - Qualitative
+- id: 20
+  title: Do include which software version you plan to use.
+  please: do
+  tags:
+  - - Gold standard
+    - Scriptable
+- id: 21
+  title: Do think about whether your data is personal, sensitive in order to fit with
+    the guidelines of data protection
+  please: do
+  tags:
+  - Quantitative and Qualitative
+- id: 22
+  title: Don't assume that other people know your research as well as you do.
+  please: don't
+  tags:
+  - - During prereg-prep
+    - Conceptual consideration
+    - Intermediate
+    - Replication
+    - Collaboration
+- id: 23
+  title: Don't assume that your project is ineligible for preregistration.
+  please: don't
+  tags:
+  - - Before prereg
+    - Pre data collection
+    - Beginner
+    - During data collection
+    - Post data collection
+    - Secondary data
+    - Strictly exploratory
+- id: 24
+  title: Don't be afraid of deviating from the preregistered plan if this clearly
+    improves the value of the research or for ethical purposes.
+  please: don't
+  tags:
+  - - After prereg
+    - Deviation
+    - Intermediate
+    - Good practice
+- id: 25
+  title: Don't be evil.
+  please: don't
+  tags:
+  - - During prereg-prep
+    - Conceptual consideration
+    - Show always
+    - Minimal
+- id: 26
+  title: Don't be too hard on yourself.
+  please: don't
+  tags:
+  - - During prereg-prep
+    - Conceptual consideration
+    - Gold standard
+    - Self-compassion
+- id: 27
+  title: Don't ignore your preregistration or just follow it broadly.
+  please: don't
+  tags:
+  - - After prereg
+    - During data collection
+    - Post data collection
+    - Minimal
+- id: 28
+  title: Don't let the perfect be the enemy of the good.
+  please: don't
+  tags:
+  - - During prereg-prep
+    - Conceptual consideration
+    - Good practice
+    - Novice
+- id: 29
+  title: Don't lie.
+  please: don't
+  tags:
+  - - During prereg-prep
+    - Conceptual consideration
+    - Show always
+    - Minimal
+- id: 30
+  title: Don't not preregister if there is reason to do it.
+  please: don't
+  tags:
+  - - During prereg-prep
+    - Conceptual consideration
+    - Minimal
+- id: 31
+  title: Don't panic.
+  please: don't
+  tags:
+  - - During prereg-prep
+    - Conceptual consideration
+    - Show always
+    - Good practice
+- id: 32
+  title: Don't submit multiple different pre-registrations for the same project to
+    pick one later.
+  please: don't
+  tags:
+  - - During prereg-prep
+    - Conceptual consideration
+    - Minimal
+- id: 33
+  title: Don't treat prereg like it is just a bureaucratic burden/a simple check off
+    list.
+  please: don't
+  tags:
+  - - During prereg-prep
+    - Conceptual consideration
+    - Minimal
+    - Hours available
+- id: 34
+  title: Don't underspecify to allow for flexibility.
+  please: don't
+  tags:
+  - - During prereg-prep
+    - Conceptual consideration
+    - Good practice
+    - Hours available
+- id: 35
+  title: Expect it to not be 100% perfect the first time around.
+  please: do
+  tags:
+  - - Before prereg
+    - Pre data collection
+    - Novice
+    - Beginner
+    - Show always
+- id: 36
+  title: Feel free to include more than what you pre-registered, but clearly distinguish
+    between confirmatory vs. exploratory analyses in your write-up.
+  please: do
+  tags:
+  - - After prereg
+    - Show always
+    - Mix
+- id: 37
+  title: First state precisely what you want to do, and then include justification
+    if your choice deviates from common practice.
+  please: do
+  tags:
+  - - During prereg-prep
+    - Conceptual consideration
+    - Gold standard
+    - Verbose
+- id: 38
+  title: Give yourself credit for the work you’ve done.
+  please: do
+  tags:
+  - - During prereg-prep
+    - Conceptual consideration
+    - Good practice
+- id: 39
+  title: Have contingency plans and be transparent about them.
+  please: do
+  tags:
+  - - During prereg-prep
+    - Conceptual consideration
+    - Intermediate
+    - Good practice
+    - Deviation
+- id: 40
+  title: If possible, do attach a sample questionnaire or sample guidelines, together
+    with informed consent form
+  please: do
+  tags:
+  - Qualitative
+- id: 41
+  title: 'Joke: Do consider a quantitative study and continue the qualitative stuff.'
+  please: do
+  tags:
+  - Qualitative
+- id: 42
+  title: Keep in mind why you’re doing it.
+  please: do
+  tags:
+  - - Before prereg
+    - Pre data collection
+    - Research clarity
+- id: 43
+  title: Make sure all collaborators are on board.
+  please: do
+  tags:
+  - - During prereg-prep
+    - Conceptual consideration
+    - Minimal
+    - Registered Report
+    - Collaboration
+- id: 44
+  title: Make sure that you want to or need to do a preregistration.
+  please: do
+  tags:
+  - - Before prereg
+    - Pre data collection
+    - Post data collection
+    - Secondary data
+    - Strictly exploratory
+    - Registered Report
+    - Novice
+    - Beginner
+    - Days available
+    - Weeks available
+- id: 45
+  title: 'New: Be clear and transparent about your familiarity with the data'
+  please: do
+  tags:
+  - - Secondary data
+    - Good practice
+    - Beginner
+    - During prereg-prep
+- id: 46
+  title: 'New: Be detailed about the models you will use (included variables, estimators...).'
+  please: do
+  tags:
+  - - During prereg-prep
+    - Conceptual consideration
+    - Quantitative
+    - Statistics
+    - Minimal
+- id: 47
+  title: 'New: Be detailed about your sample size strategy.'
+  please: do
+  tags:
+  - - During prereg-prep
+    - Qualitative
+    - Good practice
+- id: 48
+  title: 'New: Clearly distinguish between the confirmatory and exploratory parts
+    of your research'
+  please: do
+  tags:
+  - - Mix
+    - Minimal
+    - Conceptual consideration
+    - Before prereg
+- id: 49
+  title: 'New: Consider if you think your research is eligible for preregistering
+    confirmatory hypotheses (that you don''t know the data too well)'
+  please: do
+  tags:
+  - - Secondary data
+    - Good practice
+    - Beginner
+    - Before prereg
+- id: 50
+  title: 'New: Consider whether your theory is ready for confirmatory research (or
+    whether exploratory research has to be done first)'
+  please: .na.character
+  tags:
+  - - Before prereg
+    - Intermediate
+- id: 51
+  title: 'New: Describe all the important specifics of your experiment (e.g., the
+    number of groups, between x within, factorial,...)'
+  please: do
+  tags:
+  - - Experimental
+    - Beginner
+    - Minimal
+    - During preparation prereg
+- id: 52
+  title: 'New: Describe clearly the manipulated factors with all the levels.'
+  please: do
+  tags:
+  - - Experimental
+    - Beginner
+    - Minimal
+    - During preparation prereg
+- id: 53
+  title: 'New: Describe how you will hande attrition.'
+  please: do
+  tags:
+  - - During prereg-prep
+    - Practical step
+    - Longitudinal
+    - Quantitative
+    - Statistics
+    - Minimal
+- id: 54
+  title: 'New: Describe the deviations from the research you replicate and why (?)'
+  please: do
+  tags:
+  - - Replication
+    - Good practice
+    - Conceptual consideration
+    - During prereg-prep
+- id: 55
+  title: 'New: Do consider reflecting on your positionality and describe it.'
+  please: do
+  tags:
+  - Qualitative
+- id: 56
+  title: 'New: Estimate the sample size before data collection.'
+  please: do
+  tags:
+  - - Before prereg
+    - Quantitative
+    - Statistics
+- id: 57
+  title: 'New: Even if you don''t have hypotheses, try to formulate research questions.'
+  please: do
+  tags:
+  - - During prereg-prep
+    - Conceptual consideration
+    - Minimal
+    - Strictly exploratory
+- id: 58
+  title: 'New: If using Bayesian analysis, preregister and justify your priors.'
+  please: do
+  tags:
+  - - Bayesian
+    - Statistics
+    - Quantitative
+    - Before prereg
+- id: 59
+  title: 'New: Include all the manipulation checks you plan to conduct in your analysis
+    plan'
+  please: do
+  tags:
+  - - Experimental
+    - Beginner
+    - Minimal
+    - During preparation prereg
+- id: 60
+  title: 'New: Include the measurement invariance (across time) testing in your analysis
+    plan and what will you do if the invariance is not supported.'
+  please: do
+  tags:
+  - - During prereg-prep
+    - Conceptual consideration
+    - Longitudinal
+    - Quantitative
+    - Statistics
+    - Gold standard
+- id: 61
+  title: 'New: Include the reference to the research you are replicating (?)'
+  please: do
+  tags:
+  - - Replication
+    - Good practice
+    - practical step
+    - During prereg-prep
+- id: 62
+  title: 'New: Justify the selection of your statistical models.'
+  please: do
+  tags:
+  - - During prereg-prep
+    - Practical step
+    - Statistics
+    - Good practice
+- id: 63
+  title: 'New: Justify the use of a specific technique of investigation (EEG, heart
+    rate variability, reaction times).'
+  please: do
+  tags:
+  - - Neuroscience
+    - Psychophysiology
+    - Before prereg
+- id: 64
+  title: 'New: Justify why you''re using a whole brain or a region of interest approach.'
+  please: do
+  tags:
+  - - Before prereg
+    - Practical step
+    - Neuroscience
+- id: 65
+  title: 'New: Keep your preregistered code tidy'
+  please: do
+  tags:
+  - - Scriptable
+    - Gold Standard
+    - expert
+    - During prereg-prep
+- id: 66
+  title: 'New: Pay attention to both measurement and structural parts of the model.
+    (Suggestion: To strike pay attention (too unspecific) and use Specify instead)'
+  please: do
+  tags:
+  - - SEM
+    - Model fit
+    - Quantitative
+    - Statistics
+- id: 67
+  title: 'New: Preregister an analysis plan, even if it is a descriptive study'
+  please: do
+  tags:
+  - - Descriptive
+    - Minimal
+    - Beginner
+    - Before prereg
+- id: 68
+  title: 'New: Preregister your code if you have it.'
+  please: do
+  tags:
+  - - During prereg-prep
+    - Gold Standard
+    - Expert
+    - Scriptable
+- id: 69
+  title: 'New: Preregister your exclusion criteria'
+  please: do
+  tags:
+  - - Meta-analysis
+    - Systematic review
+    - Minimal
+    - Beginner
+    - During prereg-prep
+    - Conceptual consideration
+- id: 70
+  title: 'New: Preregister your search strategy (e.g., key words, strings)'
+  please: do
+  tags:
+  - - Meta-analysis
+    - Systematic review
+    - Minimal
+    - Beginner
+    - During prereg-prep
+    - Conceptual consideration
+- id: 71
+  title: 'New: Preregister!'
+  please: do
+  tags:
+  - - Strictly exploratory
+    - Minimal
+    - beginner
+    - Before prereg
+- id: 72
+  title: 'New: Report deviations from your preregistration in a clear and well-arranged
+    manner (e.g., separate section in the methods part or in a table).'
+  please: do
+  tags:
+  - - After prereg
+    - Good practice
+    - During data collection
+    - Post data collection
+    - Deviation
+- id: 73
+  title: 'New: Share the experimental stimuli with your prereg.'
+  please: do
+  tags:
+  - - Experimental
+    - Intermediate
+    - Gold Standard
+    - Practical step
+- id: 74
+  title: 'New: Sharing is caring: don''t forget your data dictionary and notebook
+    code.'
+  please: do
+  tags:
+  - - During prereg-prep
+    - Quantitative
+- id: 75
+  title: 'New: Specifiy how you will evaluate the effect''s magnitude, do not rely
+    solely on p-values.'
+  please: do
+  tags:
+  - - During prereg-prep
+    - Practical step
+    - Quantitative
+    - Statistics
+    - Gold standard
+- id: 76
+  title: 'New: Specify how you will treat influential cases.'
+  please: do
+  tags:
+  - - Before prereg
+    - Practical step
+    - Psychometrics
+    - Statistics
+    - Good practice
+- id: 77
+  title: 'New: Specify how you will treat missing data.'
+  please: do
+  tags:
+  - - Before prereg
+    - Missing data
+    - Quantitative
+    - Psychometrics
+    - Statistics
+    - Conceptual consideration
+    - Good practice
+    - Clinical trial
+- id: 78
+  title: 'New: Specify how you will treat outliers.'
+  please: do
+  tags:
+  - - Before prereg
+    - Practical step
+    - Psychometrics
+    - Statistics
+    - Good practice
+- id: 79
+  title: 'New: Specify sensitivity parameters for network models (like thresholds
+    or hyperparameters).'
+  please: do
+  tags:
+  - - Before prereg
+    - Networks
+    - Statistics
+- id: 80
+  title: 'New: Specify the alpha level correction you will use.'
+  please: do
+  tags:
+  - - Before prereg
+    - Practical step
+    - Neuroscience
+    - Statistics
+    - Minimal
+- id: 81
+  title: 'New: Specify the estimator.'
+  please: do
+  tags:
+  - - During prereg-prep
+    - SEM
+    - Factor analysis
+    - Quantitative
+    - Statistics
+- id: 82
+  title: 'New: Specify the inference criteria (e.g., smallest effect size of interest,
+    statistical significance level).'
+  please: do
+  tags:
+  - - During prereg-prep
+    - Practical step
+    - Quantitative
+    - Statistics
+    - Good practice
+- id: 83
+  title: 'New: Specify which of your constructs are reflective or formative.'
+  please: do
+  tags:
+  - - SEM
+    - Model fit
+    - Statistics
+- id: 84
+  title: 'New: Specify your nomological network.'
+  please: do
+  tags:
+  - - Psychometrics
+    - Scale validation
+    - Measure development
+    - Before prereg
+    - Quantitative
+- id: 85
+  title: 'New: State the nature of your replication study (direct x conceptual)'
+  please: do
+  tags:
+  - - Replication
+    - Good practice
+    - conceptual consideration
+    - During prereg-prep
+- id: 86
+  title: 'New: When you can, prefer open toolboxes for stimuli presentation and data
+    analysis.'
+  please: do
+  tags:
+  - - Conceptual consideration
+    - Neuroscience
+- id: 87
+  title: 'New: You can also preregister exploratory studies, describing competing
+    theories/hypotheses.'
+  please: do
+  tags:
+  - - Before prereg
+    - Conceptual consideration
+    - Strictly exploratory
+- id: 88
+  title: 'New: You can do the preregistration even after the data collection'
+  please: do
+  tags:
+  - - Before prereg
+    - Conceptual consideration
+    - Post data collection
+    - Novice
+    - Beginner
+    - Intermediate
+    - Secondary data
+- id: 89
+  title: Preregister as early as possible, preferably before data collection starts/
+    before data is made accessible to researchers.
+  please: do
+  tags:
+  - - During prereg-prep
+    - Conceptual consideration
+    - Show always
+- id: 90
+  title: Record, report and justify all deviations from your preregistration.
+  please: do
+  tags:
+  - - After prereg
+    - Minimal
+    - Show always
+    - During data collection
+    - Post data collection
+    - Deviation
+- id: 91
+  title: Rev...
+  please: .na.character
+  tags:
+  - - Expert
+    - Gold standard
+- id: 92
+  title: 'Rev2: Be clear about what you do not know and clearly explain your uncertainties.'
+  please: do
+  tags:
+  - - During prereg-prep
+    - Conceptual consideration
+    - Intermediate
+    - Good practice
+    - Research clarity
+- id: 93
+  title: 'Rev2: Disclose where you expect to be flexible and consider making a decision
+    tree to make your choices tranparent.'
+  please: do
+  tags:
+  - - During prereg-prep
+    - Conceptual consideration
+    - Intermediate
+    - Good standard
+- id: 94
+  title: 'Rev: Be clear when specifying your research (e.g., hypotheses, sample size
+    rationale etc.) in the preregistration.'
+  please: do
+  tags:
+  - - Before prereg
+    - Pre data collection
+    - Beginner
+    - Minimal
+    - Research clarity
+- id: 95
+  title: 'Rev: Browse through the available preregistration formats to see what works
+    best for you.'
+  please: do
+  tags:
+  - - Before prereg
+    - Pre data collection
+    - Novice
+    - Format selection
+- id: 96
+  title: 'Rev: Clarify for yourself what purpose the preregistration serves in your
+    research.'
+  please: do
+  tags:
+  - - Before prereg
+    - Pre data collection
+    - Beginner
+    - Minimal
+    - Research clarity
+- id: 97
+  title: 'Rev: Clearly explain the uncertainties and alternative approach (decision
+    tree (?))'
+  please: .na.character
+  tags:
+  - - Intermediate/Expert
+    - Good standard
+    - Gold standard
+- id: 98
+  title: 'Rev: Do not plan steps you already know you cannot do. (Rephrasing suggestion:
+    Do not plan steps that you know are not feasible.)'
+  please: .na.character
+  tags:
+  - - During prereg-prep
+    - Conceptual consideration
+    - Hours available
+    - Good practice
+    - Beginner
+- id: 99
+  title: 'Rev: Don''t beat yourself up for not doing everything perfectly or in a
+    way you would ideally want to'
+  please: don't
+  tags:
+  - Beginner
+- id: 100
+  title: 'Rev: Make decision trees (?)'
+  please: do
+  tags:
+  - - Intermediate
+    - Good standard
+- id: 101
+  title: 'Rev: Provide all the relevant information and describe everything clearly
+    for the future collaborators/reviewers/replicators.'
+  please: do
+  tags:
+  - - During prereg-prep
+    - Conceptual consideration
+    - Intermediate
+    - Good practice
+    - Collaboration
+    - Research clarity
+- id: 102
+  title: 'Rev: Specify how you will evaluate model fit.'
+  please: do
+  tags:
+  - - SEM
+    - Factor analysis
+    - Model fit
+    - Before prereg
+    - Intermediate
+    - Quantitative
+    - Statistics
+- id: 103
+  title: Set aside time for your collaborators to have a look at it, provide feedback,
+    and agree on it upon submission.
+  please: do
+  tags:
+  - - Before prereg
+    - Pre data collection
+    - Weeks available
+    - Registered Report
+    - Collaboration
+- id: 104
+  title: Specify model fit cut offs? (maybe using the McNeish-Wolfe technique?)
+  please: do
+  tags:
+  - - SEM
+    - Factor analysis
+    - Model fit
+    - Before prereg
+    - Intermediate
+    - Expert
+- id: 105
+  title: Specify which software versions you are going to use and how you are making
+    this reproducible (e.g., using the R groundhog package, CodeOcean).
+  please: do
+  tags:
+  - - During prereg-prep
+    - Conceptual consideration
+    - Gold standard
+    - Open Software
+    - Intermediate
+    - Expert
+- id: 106
+  title: 'Suggested Revision for previous: Consider the possibility that your resarch
+    might not be suitable for preregistering confirmatory hypotheses (e.g. if you
+    know the data too well).'
+  please: do
+  tags:
+  - - Secondary data
+    - Good practice
+    - Beginner
+    - Before prereg
+- id: 107
+  title: Take a look at a few examples before you start.
+  please: do
+  tags:
+  - - Before prereg
+    - Pre data collection
+    - Novice
+    - Beginner
+    - Days available
+    - Weeks available
+    - Format selection
+- id: 108
+  title: Think of it as a tool that helps you think through the steps of your research
+    before actually conducting it, so you're not forced to wing it later.
+  please: do
+  tags:
+  - - During prereg-prep
+    - Conceptual consideration
+    - Novice
+    - Pre data collection
+- id: 109
+  title: Try your best to reduce your researcher degrees of freedom.
+  please: do
+  tags:
+  - - During prereg-prep
+    - Conceptual consideration
+    - Show always
+    - Minimal
+- id: 110
+  title: Understand the implications of the complexity of your design. (example may
+    be needed here)
+  please: do
+  tags:
+  - - During prereg-prep
+    - Conceptual consideration
+- id: 111
+  title: Update or submit a new preregistration when substantive changes need to be
+    made.
+  please: do
+  tags:
+  - - After prereg
+    - Gold Standard
+    - Novice
+    - Beginner
+- id: 112
+  title: Use consistent terminology between preregistration and manuscript as it makes
+    it easier to compare these later on.
+  please: do
+  tags:
+  - - During prereg-prep
+    - Conceptual consideration
+    - Intermediate
+    - Gold standard
+    - Registered Report
+- id: 113
+  title: View yourself as a future replicator/collaborator/reviewer.
+  please: do
+  tags:
+  - - During prereg-prep
+    - Conceptual consideration
+- id: 114
+  title: When you do not have much time, set the following priorities.
+  please: do
+  tags:
+  - - During prereg-prep
+    - Conceptual consideration
+    - Hours available
+    - Bullet points
+    - Time Management
+resources:
+- id: 1
+  title: 'Alpha justification Daniel Lakens shiny app: https://shiny.ieis.tue.nl/JustifyAlpha/
+    and paper: https://doi.org/10.1177/25152459221080396'
+  tags:
+  - Pre data collection
+  doi: 10.1177/25152459221080396
+- id: 2
+  title: AsPredicted (https://aspredicted.org/)
+  tags:
+  - - Hours
+    - Minimal
+    - Pre data collection
+  doi: .na.character
+- id: 3
+  title: Bakker et al. (2020). Ensuring the quality and specificity of preregistrations.
+    https://doi.org/10.1371/journal.pbio.3000937
+  tags:
+  - More info
+  doi: 10.1371/journal.pbio.3000937
+- id: 4
+  title: Branney, P. E., Brooks, J., Kilby, L., Newman, K., Norris, E., Pownall, M.,
+    ... & Whitaker, C. M. (2023). Three steps to open science for qualitative research
+    in psychology. Social and Personality Psychology Compass, e12728. https://compass.onlinelibrary.wiley.com/doi/full/10.1111/spc3.12728
+  tags:
+  - Qualitative
+  doi: 10.1111/spc3.12728
+- id: 5
+  title: COS Preregistration Challenge Template (OSF) (https://osf.io/jea94/)
+  tags:
+  - - Days
+    - Gold standard
+    - Pre data collection
+  doi: .na.character
+- id: 6
+  title: 'Claesen, A., Gomes, S., Tuerlinckx, F., & Vanpaemel, W. (2021). Comparing
+    dream to reality: an assessment of adherence of the first generation of preregistered
+    studies. Royal Society Open Science, 8(10), 211037. https://doi.org/10.1098/rsos.211037'
+  tags:
+  - - Deviations
+    - More info
+  doi: 10.1098/rsos.211037
+- id: 7
+  title: Deviation_checklist_PRP_QUANT.xlsx. (ZPID). Google Docs. Retrieved July 9,
+    2023, from https://docs.google.com/spreadsheets/d/1lbUj_8C0gob63wv_6QLsQunmzNh9Ig3L/edit?usp=sharing&ouid=114975032714742083647&rtpof=true&sd=true
+  tags:
+  - - Deviations
+    - Post data collection
+  doi: .na.character
+- id: 8
+  title: EEG ERP preregistration template (https://osf.io/preprints/metaarxiv/4nvpt/)
+  tags:
+  - - Days
+    - Neuroimaging/Brain research
+    - Good practice
+    - Pre data collection
+  doi: .na.character
+- id: 9
+  title: Ferguson et al. (2023). Survey of open science practices and attitudes in
+    the social sciences. https://doi.org/10.1038/s41467-023-41111-1
+  tags:
+  - More info
+  doi: 10.1038/s41467-023-41111-1
+- id: 10
+  title: For clinical trials (might be relevant for psychology too) https://clinicaltrials.gov/
+  tags:
+  - Clinical trial
+  doi: .na.character
+- id: 11
+  title: Hardwicke & Wagenmakers. (2023). Reducing bias, increasing transparency and
+    calibrating confidence with preregistration. https://doi.org/10.1038/s41562-022-01497-2
+  tags:
+  - More info
+  doi: 10.1038/s41562-022-01497-2
+- id: 12
+  title: 'Heirene, R., LaPlante, D., Louderback, E. R., Keen, B., Bakker, M., Serafimovska,
+    A., & Gainsbury, S. M. (2021). Preregistration specificity & adherence: A review
+    of preregistered gambling studies & cross-disciplinary comparison. In PsyArXiv.
+    https://doi.org/10.31234/osf.io/nj4es'
+  tags:
+  - - Deviations
+    - More info
+  doi: 10.31234/osf.io/nj4es
+- id: 13
+  title: 'Kathawalla, U.-K., Silverstein, P., & Syed, M. (2021). Easing into open
+    science: A guide for graduate students and their advisors. Collabra. Psychology,
+    7(1). https://doi.org/10.1525/collabra.18684'
+  tags:
+  - - Beginner
+    - PhD
+  doi: 10.1525/collabra.18684
+- id: 14
+  title: 'Lakens, D. (2019). The value of preregistration for psychological science:
+    A conceptual analysis. https://www.jstage.jst.go.jp/article/sjpr/62/3/62_221/_pdf'
+  tags:
+  - More info
+  doi: .na.character
+- id: 15
+  title: 'Logg, J. M., & Dorison, C. A. (2021). preregistration: Weighing costs and
+    benefits for researchers. Organizational Behavior and Human Decision Processes,
+    167, 18–27. https://doi.org/10.1016/j.obhdp.2021.05.006'
+  tags:
+  - - More info
+    - Bullet points
+  doi: 10.1016/j.obhdp.2021.05.006
+- id: 16
+  title: PRISMA-P (http://prisma-statement.org/Extensions/Protocols)
+  tags:
+  - - Days
+    - Literature review
+    - Good practice
+    - Pre data collection
+    - Post data collection
+  doi: .na.character
+- id: 17
+  title: PROSPERO
+  tags:
+  - - Weeks
+    - Literature review
+    - Good practice
+    - Gold Standard
+    - Pre data collection
+  doi: .na.character
+- id: 18
+  title: 'Peikert, A. (2021) Reproducible Research in R: A Tutorial on How to Do the
+    Same Thing More Than Once. https://doi.org/10.3390/psych3040053'
+  tags:
+  - Scriptable
+  doi: 10.3390/psych3040053
+- id: 19
+  title: 'Planned comparison by Umberto Granziol apRiori shiny app: https://cran.r-project.org/web/packages/appRiori/index.html'
+  tags:
+  - - Pre data collection
+    - Power analysis
+  doi: .na.character
+- id: 20
+  title: 'Prereg package - Provides a collection of templates to author preregistration
+    documents for scientific studies in PDF format:  https://cran.r-project.org/web/packages/prereg/index.html'
+  tags:
+  - - Scriptable
+    - Open Software
+  doi: .na.character
+- id: 21
+  title: 'Preregistration Planning and Deviation Documentation: Challenges, implications,
+    and suggested template. (n.d.). Google Docs. Retrieved July 9, 2023, from https://docs.google.com/document/d/1WKb2HAoSmgUndzcI1DDYuGyUpLFwcmuSn5OAIlI32KI/edit?pli=1'
+  tags:
+  - - Deviations
+    - Post data collection
+  doi: .na.character
+- id: 22
+  title: Preregistration of Qualitative Research (Haven et al., 2020) (https://doi.org/10.1080/08989621.2019.1580147)
+  tags:
+  - - Days
+    - Qualitative
+    - Good practice
+    - Pre data collection
+  doi: 10.1080/08989621.2019.1580147)
+- id: 23
+  title: 'Prospective and retrospective Design Analysis R package: https://cran.r-project.org/web/packages/PRDA/index.html'
+  tags:
+  - Power analysis
+  doi: .na.character
+- id: 24
+  title: "Psychological Research Preregistration-Quantitative (aka PRP-QUANT):\n-
+    https://prereg-psych.org/index.php/rrp/templates\n- http://dx.doi.org/10.23668/psycharchives.4584
+    \n- R Markdown (https://github.com/crsh/prereg)"
+  tags:
+  - - Days
+    - Gold standard
+    - Pre data collection
+  doi: 10.23668/psycharchives.4584
+- id: 25
+  title: Registered Report Protocol Preregistration (https://osf.io/93znh/)
+  tags:
+  - - Days
+    - Registered Report
+    - Good practice
+    - Pre data collection
+  doi: .na.character
+- id: 26
+  title: Replication recipe (Brandt et al., 2013) (https://www.sciencedirect.com/science/article/pii/S0022103113001819)
+  tags:
+  - - Days
+    - Good practice
+    - Pre data collection
+  doi: .na.character
+- id: 27
+  title: 'Reporting deviations from preregistration: https://osf.io/xv5rp/'
+  tags:
+  - - Deviations
+    - Post data collection
+  doi: .na.character
+- id: 28
+  title: 'Sample size justification Daniel Lakens shiny app: https://shiny.ieis.tue.nl/sample_size_justification/'
+  tags:
+  - - Pre data collection
+    - Power analysis
+    - Days
+  doi: .na.character
+- id: 29
+  title: Scoping review preregistration (https://doi.org/10.23668/psycharchives.5631)
+  tags:
+  - - Days
+    - Scoping Review
+    - Good practice
+    - Pre data collection
+  doi: 10.23668/psycharchives.5631)
+- id: 30
+  title: Secondary Data Preregistration (van den Akker et al., 2021) (https://doi.org/10.15626/MP.2020.2625)
+  tags:
+  - - Days
+    - Secondary data
+    - Good practice
+    - Pre data collection
+  doi: 10.15626/MP.2020.2625)
+- id: 31
+  title: Secondary Data Preregistration template on Open Science Framework (https://docs.google.com/document/d/1p6UE2b0D0ON4XEccOCOU1pdaCTiyGLOfP-g-8Ayxylk/edit?usp=sharing)
+  tags:
+  - - Days
+    - Secondary data
+    - Good practice
+    - Post data collection
+  doi: .na.character
+- id: 32
+  title: 'Simmons, J., Nelson, L., & Simonsohn, U. (2021). Pre‐registration: Why and
+    how. Journal of Consumer Psychology, 31(1), 151–162. https://doi.org/10.1002/jcpy.1208'
+  tags:
+  - Gold standard
+  doi: 10.1002/jcpy.1208
+- id: 33
+  title: 'Simulation Studies for Methodological Research in Psychology: A Standardized
+    Template for Planning, Preregistration, and Reporting'
+  tags:
+  - - Days
+    - Modeling/simulation-based research
+    - Good practice
+    - Pre data collection
+  doi: .na.character
+- id: 34
+  title: 'Spitzer L, Mueller S (2023) Registered report: Survey on attitudes and experiences
+    regarding preregistration in psychological research. PLoS ONE 18(3): e0281086.
+    https://doi.org/10.1371/journal.pone.0281086'
+  tags:
+  - More info
+  doi: 10.1371/journal.pone.0281086
+- id: 35
+  title: 'Toth et al. (2020). Study Preregistration: An Evaluation of a Method for
+    Transparent Reporting. https://doi.org/10.1007/s10869-020-09695-3'
+  tags:
+  - More info
+  doi: 10.1007/s10869-020-09695-3
+- id: 36
+  title: 'Van den Akker, O., Bakker, M., van Assen, M. A., Pennington, C. R., Verweij,
+    L., Elsherif, M., ... & Wicherts, J. (2023). The effectiveness of preregistration
+    in psychology: Assessing preregistration strictness and preregistration-study
+    consistency.'
+  tags:
+  - - More info
+    - Deviations
+  doi: .na.character
+- id: 37
+  title: 'Van den Akker, O., van Assen, M. A. L. M., Bakker, M., Elsherif, M. M.,
+    Wong, T. K., & Wicherts, J. M. (2023, May 19). Preregistration in practice: A
+    comparison of preregistered and non-preregistered studies in psychology.  Behaviour
+    Research Methods. https://doi.org/10.31222/osf.io/fhdbs'
+  tags:
+  - More info
+  doi: 10.31222/osf.io/fhdbs
+- id: 38
+  title: fmri preregistration template (https://www.psycharchives.org/en/item/eaf562e3-69a7-46a4-925a-05a982ef1a0b)
+  tags:
+  - - Days
+    - Neuroimaging/Brain research
+    - Good practice
+    - Pre data collection
+  doi: .na.character
+- id: 39
+  title: https://osf.io/zab38/wiki/home/ (https://osf.io/zab38/)
+  tags:
+  - Gold standard
+  doi: .na.character
+- id: 40
+  title: van ‘t Veer and Giner-Sorolla (2016) (https://www.sciencedirect.com/science/article/pii/S0022103116301925)
+  tags:
+  - - Days
+    - Good practice
+    - Pre data collection
+  doi: .na.character
