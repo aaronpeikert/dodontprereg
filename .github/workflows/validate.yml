@@ -5,6 +5,7 @@ on:
     branches: [ "main" ]
     paths:
       - data.yml
+      - .github/workflows/validate.yml
   pull_request:
     branches: [ "main" ]
 
