@@ -3,6 +3,8 @@ name: Validate data.yml
 on:
   push:
     branches: [ "main" ]
+    paths:
+      - data.yml
   pull_request:
     branches: [ "main" ]
 
