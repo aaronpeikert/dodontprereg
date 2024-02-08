@@ -1,6 +1,7 @@
 library(purrr)
 library(shiny)
 library(dplyr)
+library(yaml)
 
 # Define the UI
 ui <- fluidPage(
@@ -28,7 +29,7 @@ ui <- fluidPage(
 server <- function(input, output) {
 
   # Read datasets
-  content <- read_yaml("../import_data.yml")
+  content <- read_yaml("./import_data.yml")
 
   statements <- content$statements %>% map(function(tb) {
     tb <- as_tibble(tb)
