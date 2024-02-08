@@ -18,6 +18,7 @@ RUN install2.r --error --skipmissing --skipinstalled \
   shinylive \
   httpuv \
   yaml
+RUN Rscript -e "shinylive::assets_download('0.1.5')"
 #RUN pip3 install -r ./settings/requirements.txt
 # Copy the Shiny app code
 COPY shiny/app.R /home/shiny/app.R
