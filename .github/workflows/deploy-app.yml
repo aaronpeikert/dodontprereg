@@ -35,7 +35,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Render PDF
+      - name: Build
         run: |
           Rscript -e "shinylive::export(appdir = 'shiny', destdir = 'deploy')"
 
