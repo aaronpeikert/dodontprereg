@@ -7,7 +7,7 @@ on:
       - Dockerfile
       - docker-bake.hcl
       - requirements.txt
-      - .github/workflows/build-container.yml
+      - .github/workflows/build-image-full.yml
   workflow_dispatch:
 
 env:
