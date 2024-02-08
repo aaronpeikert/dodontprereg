@@ -14,6 +14,6 @@ target "base" {
 }
 
 target "full" {
-  inherits = ["docker-metadata-action"]
+  inherits = ["base"]
   target = "full" # specify the target stage in Dockerfile
 }
