@@ -1,7 +1,5 @@
 ARG R_VERSION
-FROM rocker/r-ver:${R_VERSION}
-ARG SHINY_PORT
-ENV SHINY_PORT $SHINY_PORT
+FROM rocker/r-ver:${R_VERSION} as base
 RUN apt-get -y update &&  \
     apt-get install -y --no-install-recommends \
     # list all apt packages below
@@ -18,8 +16,16 @@ RUN install2.r --error --skipmissing --skipinstalled \
   shinylive \
   httpuv \
   yaml
-RUN Rscript -e "shinylive::assets_download('0.1.5')"
-#RUN pip3 install -r ./settings/requirements.txt
+FROM base as shinylive
+RUN Rscript -e "shinylive::assets_download()"
+FROM shinylive as linkml
+RUN /rocker_scripts/install_python.sh
+COPY requirements.txt requirements.txt
+RUN pip install -r requirements.txt
+FROM linkml as full
+ARG SHINY_PORT
+ENV SHINY_PORT $SHINY_PORT
+RUN /rocker_scripts/install_shiny_server.sh
 # Copy the Shiny app code
 COPY shiny/app.R /home/shiny/app.R
 # Set the application port using the build argument

@@ -60,5 +60,5 @@ jobs:
           files: |
             ./docker-bake.hcl
             ${{ steps.meta.outputs.bake-file }}
-          targets: build
+          targets: base
           push: true
