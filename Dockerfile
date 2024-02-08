@@ -1,4 +1,5 @@
 ARG R_VERSION
+
 FROM rocker/r-ver:${R_VERSION} as base
 RUN apt-get -y update &&  \
     apt-get install -y --no-install-recommends \
@@ -16,12 +17,15 @@ RUN install2.r --error --skipmissing --skipinstalled \
   shinylive \
   httpuv \
   yaml
+
 FROM base as shinylive
 RUN Rscript -e "shinylive::assets_download()"
+
 FROM shinylive as linkml
 RUN /rocker_scripts/install_python.sh
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
+
 FROM linkml as full
 ARG SHINY_PORT
 ENV SHINY_PORT $SHINY_PORT
