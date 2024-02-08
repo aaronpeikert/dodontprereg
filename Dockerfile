@@ -6,6 +6,9 @@ RUN apt-get -y update &&  \
     apt-get install -y --no-install-recommends \
     # list all apt packages below
     libz-dev \
+    libarchive-dev \
+    libssl-dev \
+    libcurl4-openssl-dev \
     && \
     rm -rf /var/lib/apt/lists/*
 RUN install2.r --error --skipmissing --skipinstalled \
