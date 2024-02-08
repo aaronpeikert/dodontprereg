@@ -5,11 +5,11 @@ target "build" {
   context = "./"
   dockerfile = "Dockerfile"
   platforms = [
-    "linux/amd64"
+    "linux/amd64",
     "linux/arm64"
   ]
   args = {
-    R_VERSION = "4.3.2"
+    R_VERSION = "4.3.2",
     SHINY_PORT = "3838"
   }
 }
