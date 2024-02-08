@@ -26,7 +26,10 @@ RUN /rocker_scripts/install_python.sh
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
-FROM linkml as full
+FROM linkml as languageserver
+RUN install2.r --error --skipmissing --skipinstalled languageserver
+
+FROM languageserver as full
 ARG SHINY_PORT
 ENV SHINY_PORT $SHINY_PORT
 RUN /rocker_scripts/install_shiny_server.sh
