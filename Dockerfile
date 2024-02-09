@@ -36,6 +36,9 @@ RUN apt-get -y update &&  \
 RUN install2.r --error --skipmissing --skipinstalled languageserver
 
 FROM languageserver as full
+RUN install2.r --error --skipmissing --skipinstalled \
+  googlesheets4 \
+  tidyr
 ARG SHINY_PORT
 ENV SHINY_PORT $SHINY_PORT
 # Copy the Shiny app code
