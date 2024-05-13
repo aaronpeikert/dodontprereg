@@ -3,11 +3,14 @@ library(dplyr)
 library(yaml)
 library(shinysurveys)
 library(tibble)
+library(purrr)
 
-source(here::here("shiny", "survey_df.R"))
 library(shinysurveys)
+source(here::here("shiny", "fix_shinysurveys.R"))
 
-df <- read.csv("questions.csv")
+
+#survey_questions <- read.csv("questions.csv")
+
 
 ui <- fluidPage(
   tabsetPanel(
@@ -17,11 +20,7 @@ ui <- fluidPage(
     type = "hidden",
     tabPanelBody(
       "panel1",
-      surveyOutput(
-        df = df,
-        survey_title = "Hello, World!",
-        survey_description = "Welcome! This is a demo survey showing off the {shinysurveys} package."
-      )
+      uiOutput("survey")
     ),
     tabPanelBody("panel2",
                  sidebarLayout(
@@ -51,8 +50,35 @@ extendInputType("checkbox", {
 })
 
 server <- function(input, output, session) {
-  renderSurvey()
-  # Read datasets
+  source(here::here("shiny", "survey_df.R"))
+
+  survey_questions <- reactiveVal(survey_questions)
+
+  ui_rendered <- reactiveVal(FALSE)
+
+  survey_step <- reactiveVal(1)
+  survey_results <- reactiveVal(tibble())
+
+  output$survey <- renderUI({
+
+    req(survey_step())
+    ui_rendered(TRUE)
+
+    filtered_questions <- survey_questions() %>% filter(survey_id == survey_step())
+
+    surveyOutput(filtered_questions, "Welcome to the Do's and Don'ts of Pre-Registration",
+                 "To help us identify the materials relevant to your current situation, please answer a couple of questions.")
+  })
+
+
+  observeEvent(ui_rendered(), {
+    if (ui_rendered()) {
+      renderSurvey()
+    }
+    ui_rendered(FALSE)
+  })
+
+    # Read datasets
   content <- read_yaml(here::here("shiny", "import_data.yml"))
 
   statements <- content$statements %>% map(function(tb) {
@@ -104,14 +130,53 @@ server <- function(input, output, session) {
   output$filteredResources <- renderDataTable({
     filtered_resources()
   })
+
   observeEvent(input$submit, {
-    updateTabsetPanel(session, "hidden_tabs", selected = "panel2")
-    survey_results <- reactive(left_join(shinysurveys::getSurveyData(), df, join_by(question_id == input_id, response == option)))
-    tags <- reactive(unlist(strsplit(pull(survey_results(), tags_implied), ",")))
-    updateSelectInput(session,
-                      "tagInput",
-                      selected = tags()
-    )
+    finish <- FALSE
+
+    new_results <- shinysurveys::getSurveyData() %>% tidyr::separate_longer_delim(response, delim = ",")
+
+
+
+    if (survey_step() == 1) {
+      if (length(setdiff(new_results$response, c("Report deviations after a pre-reg", "Convince someone / decide for myself whether to pre-register"))) == 0) {
+        finish <- TRUE # Finish the survey
+      } else if (!"Work on a pre-registration" %in% new_results$response) {
+        survey_step(2) # Skip step 2
+      }
+
+    } else if (survey_step() == 2) {
+
+    } else if (survey_step() == 3) {
+
+      if(!new_results$response %in% c("Quantitative", "Mixed-methods")) {
+        survey_questions(survey_questions() %>% filter(input_id != "q_methods_quant"))
+      }
+
+      if(new_results$response != "Literature review (incl. meta-analyses)") { #Should this be displayed for mixed methods? Would tend to no.
+        survey_questions(survey_questions() %>% filter(input_id != "q_methods_lit"))
+      }
+
+      if (!new_results$response %in% c("Literature review (incl. meta-analyses)", "Quantitative")) { # Ideally this would filter for meta-analyses - but then we have ever more survey steps
+        survey_questions(survey_questions() %>% filter(input_id != "q_approach"))
+      }
+    }
+
+    survey_step(survey_step() + 1)
+    survey_results(bind_rows(survey_results(), new_results))
+
+    if (survey_step() > max(survey_questions()$survey_id) || finish) {
+
+      survey_results() %>%
+        left_join(survey_questions, by = c("question_id" = "input_id", "response" = "option")) %>%
+      updateTabsetPanel(session, "hidden_tabs", selected = "panel2")
+      tags <- reactive(unlist(strsplit(pull(survey_results(), tags_implied), ",")))
+      updateSelectInput(session,
+                        "tagInput",
+                        selected = tags()
+      )
+    }
+
   })
 }
 
