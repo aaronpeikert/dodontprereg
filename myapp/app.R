@@ -1,6 +1,11 @@
 library(purrr)
 library(shiny)
 library(dplyr)
+library(yaml)
+library(shinysurveys)
+library(tibble)
+
+source("survey_df.R")
 
 # Define the UI
 ui <- fluidPage(
@@ -24,11 +29,19 @@ ui <- fluidPage(
 
 
 
+extendInputType("checkbox", {
+  shiny::checkboxGroupInput(
+    inputId = surveyID(),
+    label = surveyLabel(),
+    choices = surveyOptions(),
+  )
+})
+
 # Define the server logic
 server <- function(input, output) {
 
   # Read datasets
-  content <- read_yaml("../import_data.yml")
+  content <- read_yaml("import_data.yml")
 
   statements <- content$statements %>% map(function(tb) {
     tb <- as_tibble(tb)
