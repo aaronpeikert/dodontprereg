@@ -1,35 +1,45 @@
-library(purrr)
 library(shiny)
-library(dplyr)
-library(yaml)
+library(shinysurveys)
 
-# Define the UI
+df <- read.csv("questions.csv")
+
 ui <- fluidPage(
-  titlePanel("The Do's and Don'ts of Pre-Registration"),
-
-  sidebarLayout(
-    sidebarPanel(
-      selectInput("tagInput", "Choose a tag to filter:",
-                  choices = c("Good practice", "Literature review", "Deviations", "Neuroscience"),
-                  multiple = TRUE)
-    ),
-
-    mainPanel(
-      tabsetPanel(
-        tabPanel("Statements", dataTableOutput("filteredStatements")),
-        tabPanel("Resources", dataTableOutput("filteredResources"))
+  tabsetPanel(
+    id = "hidden_tabs",
+    # Hide the tab values.
+    # Can only switch tabs by using `updateTabsetPanel()`
+    type = "hidden",
+    tabPanelBody(
+      "panel1",
+      surveyOutput(
+        df = df,
+        survey_title = "Hello, World!",
+        survey_description = "Welcome! This is a demo survey showing off the {shinysurveys} package."
       )
+    ),
+    tabPanelBody("panel2",
+                 sidebarLayout(
+                   sidebarPanel(
+                     selectInput("tagInput", "Choose a tag to filter:",
+                                 choices = c("Good practice", "Literature review", "Deviations", "Neuroscience", "Quantitative", "Qualitative", "Mixed-methods"),
+                                 multiple = TRUE)
+                   ),
+
+                   mainPanel(
+                     tabsetPanel(
+                       tabPanel("Statements", dataTableOutput("filteredStatements")),
+                       tabPanel("Resources", dataTableOutput("filteredResources"))
+                     )
+                   )
+                 )
     )
   )
 )
 
-
-
-# Define the server logic
-server <- function(input, output) {
-
+server <- function(input, output, session) {
+  renderSurvey()
   # Read datasets
-  content <- read_yaml("./import_data.yml")
+  content <- read_yaml(here::here("shiny", "import_data.yml"))
 
   statements <- content$statements %>% map(function(tb) {
     tb <- as_tibble(tb)
@@ -80,7 +90,15 @@ server <- function(input, output) {
   output$filteredResources <- renderDataTable({
     filtered_resources()
   })
+  observeEvent(input$submit, {
+    updateTabsetPanel(session, "hidden_tabs", selected = "panel2")
+    survey_results <- reactive(left_join(shinysurveys::getSurveyData(), df, join_by(question_id == input_id, response == option)))
+    tags <- reactive(unlist(strsplit(pull(survey_results(), tags_implied), ",")))
+    updateSelectInput(session,
+                      "tagInput",
+                      selected = tags()
+    )
+  })
 }
 
-# Run the application
-shinyApp(ui = ui, server = server)
+shinyApp(ui, server)
