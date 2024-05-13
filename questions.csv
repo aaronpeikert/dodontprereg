@@ -1,0 +1,5 @@
+question,option,input_type,input_id,dependence,dependence_value,required,tags_implied
+"Is the study quantitative, qualitative or a literate review/meta-analysis?",Quantitative,mc,q_design,,,FALSE,"Quantitative"
+"Is the study quantitative, qualitative or a literate review/meta-analysis?",Qualitative,mc,q_design,,,FALSE,"Qualitative"
+"Is the study quantitative, qualitative or a literate review/meta-analysis?",Literature review,mc,q_design,,,FALSE,"Literature review"
+"Is the study quantitative, qualitative or a literate review/meta-analysis?",Mixed-methods,mc,q_design,,,FALSE,"Qualitative,Quantitative,Mixed-methods"
