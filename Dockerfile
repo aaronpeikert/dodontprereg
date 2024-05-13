@@ -15,6 +15,7 @@ RUN install2.r --error --skipmissing --skipinstalled \
   dplyr \
   shiny \
   shinylive \
+  shinysurvey \
   httpuv \
   yaml
 
