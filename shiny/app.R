@@ -4,7 +4,7 @@ library(yaml)
 library(shinysurveys)
 library(tibble)
 
-source("survey_df.R")
+source(here::here("shiny", "survey_df.R"))
 library(shinysurveys)
 
 df <- read.csv("questions.csv")
