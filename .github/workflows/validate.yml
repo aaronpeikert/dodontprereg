@@ -3,6 +3,9 @@ name: Validate data.yml
 on:
   push:
     branches: [ "main" ]
+    paths:
+      - data.yml
+      - .github/workflows/validate.yml
   pull_request:
     branches: [ "main" ]
 
