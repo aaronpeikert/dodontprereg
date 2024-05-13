@@ -22,7 +22,7 @@ survey_questions <- tibble::tribble(
 
   3, "Is the study quantitative, qualitative or a literature review/meta-analysis?", "Quantitative", "mc", "q_design", NA, NA, TRUE,
   3, "Is the study quantitative, qualitative or a literature review/meta-analysis?", "Qualitative", "mc", "q_design", NA, NA, TRUE,
-  3, "Is the study quantitative, qualitative or a literature review/meta-analysis?", "Literature review (incl. meta-analyses)", "mc"3, , "q_design", NA, NA, TRUE,
+  3, "Is the study quantitative, qualitative or a literature review/meta-analysis?", "Literature review (incl. meta-analyses)", "mc", "q_design", NA, NA, TRUE,
   3, "Is the study quantitative, qualitative or a literature review/meta-analysis?", "Mixed-methods", "mc", "q_design", NA, NA, TRUE,
 
   3, "Has the data you have been using already been collected?", "Yes, but I have not accessed it yet", "mc", "q_secondary", NA, NA, TRUE,
