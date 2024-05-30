@@ -11,6 +11,7 @@ RUN apt-get -y update &&  \
     && \
     rm -rf /var/lib/apt/lists/*
 RUN install2.r --error --skipmissing --skipinstalled \
+  DT \
   purrr \
   dplyr \
   shiny \
