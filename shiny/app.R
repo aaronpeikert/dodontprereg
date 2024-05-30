@@ -11,6 +11,9 @@ source("fix_shinysurveys.R")
 
 survey_questions <- read.csv("questions.csv")
 
+all_tags <- function(questions){
+  unlist(strsplit(pull(questions, tags_implied), ","))
+}
 
 ui <- fluidPage(
   tabsetPanel(
@@ -26,7 +29,7 @@ ui <- fluidPage(
                  sidebarLayout(
                    sidebarPanel(
                      selectInput("tagInput", "Choose a tag to filter:",
-                                 choices = c("Good practice", "Literature review", "Deviations", "Neuroscience", "Quantitative", "Qualitative", "Mixed-methods"),
+                                 choices = all_tags(survey_questions),
                                  multiple = TRUE)
                    ),
 
@@ -166,15 +169,13 @@ server <- function(input, output, session) {
     survey_results(bind_rows(survey_results(), new_results))
 
     if (survey_step() > max(survey_questions()$survey_id) || finish) {
-
-      survey_results() %>%
-        left_join(survey_questions, by = c("question_id" = "input_id", "response" = "option")) %>%
-      updateTabsetPanel(session, "hidden_tabs", selected = "panel2")
-      tags <- reactive(unlist(strsplit(pull(survey_results(), tags_implied), ",")))
+      final_results <- left_join(survey_results(), survey_questions(), join_by(question_id == input_id, response == option), copy = TRUE)
+      tags <- all_tags(final_results)
+      print(tags)
       updateSelectInput(session,
                         "tagInput",
-                        selected = tags()
-      )
+                        selected = tags)
+      updateTabsetPanel(session, "hidden_tabs", selected = "panel2")
     }
 
   })
