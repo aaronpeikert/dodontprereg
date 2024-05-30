@@ -9,7 +9,7 @@ library(shinysurveys)
 source(here::here("shiny", "fix_shinysurveys.R"))
 
 
-#survey_questions <- read.csv("questions.csv")
+survey_questions <- read.csv("questions.csv")
 
 
 ui <- fluidPage(
