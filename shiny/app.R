@@ -53,8 +53,6 @@ extendInputType("checkbox", {
 })
 
 server <- function(input, output, session) {
-  source("survey_df.R")
-
   survey_questions <- reactiveVal(survey_questions)
 
   ui_rendered <- reactiveVal(FALSE)
@@ -68,9 +66,12 @@ server <- function(input, output, session) {
     ui_rendered(TRUE)
 
     filtered_questions <- survey_questions() %>% filter(survey_id == survey_step())
-
-    surveyOutput(filtered_questions, "Welcome to the Do's and Don'ts of Pre-Registration",
-                 "To help us identify the materials relevant to your current situation, please answer a couple of questions.")
+    if(nrow(filtered_questions) > 0){
+      surveyOutput(filtered_questions, "Welcome to the Do's and Don'ts of Pre-Registration",
+                   "To help us identify the materials relevant to your current situation, please answer a couple of questions.")
+    } else {
+      NULL
+    }
   })
 
 
@@ -126,11 +127,11 @@ server <- function(input, output, session) {
   })
 
   # Output the filtered datasets
-  output$filteredStatements <- renderDataTable({
+  output$filteredStatements <- DT::renderDT({
     filtered_statements()
   })
 
-  output$filteredResources <- renderDataTable({
+  output$filteredResources <- DT::renderDT({
     filtered_resources()
   })
 
