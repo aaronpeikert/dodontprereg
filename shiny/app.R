@@ -6,7 +6,7 @@ library(tibble)
 library(purrr)
 
 library(shinysurveys)
-source(here::here("shiny", "fix_shinysurveys.R"))
+source("fix_shinysurveys.R")
 
 
 survey_questions <- read.csv("questions.csv")
@@ -50,7 +50,7 @@ extendInputType("checkbox", {
 })
 
 server <- function(input, output, session) {
-  source(here::here("shiny", "survey_df.R"))
+  source("survey_df.R")
 
   survey_questions <- reactiveVal(survey_questions)
 
@@ -79,7 +79,7 @@ server <- function(input, output, session) {
   })
 
     # Read datasets
-  content <- read_yaml(here::here("shiny", "import_data.yml"))
+  content <- read_yaml("import_data.yml")
 
   statements <- content$statements %>% map(function(tb) {
     tb <- as_tibble(tb)
