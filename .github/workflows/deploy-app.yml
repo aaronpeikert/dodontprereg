@@ -4,9 +4,9 @@ on:
   push:
     branches: [main]
     paths:
-      - data.yml
-      - shiny/
-      - .github/workflows/deploy-app.yml
+      - 'data.yml'
+      - 'shiny/**'
+      - '.github/workflows/deploy-app.yml'
   registry_package:
     types: [published, updated]
   workflow_dispatch:
