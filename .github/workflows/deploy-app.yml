@@ -5,7 +5,7 @@ on:
     branches: [main]
     paths:
       - data.yml
-      - shiny
+      - shiny/
       - .github/workflows/deploy-app.yml
   registry_package:
     types: [published, updated]
