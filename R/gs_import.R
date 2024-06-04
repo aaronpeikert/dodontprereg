@@ -55,10 +55,12 @@ resources_long <- resources_long %>%
 resources_long <- resources_long %>%
   rename(title = Resource) %>%
   mutate(
-    extracted = stringr::str_extract(title, "\\(?10\\.\\S*|https?://\\S+\\)?"),
-    extracted = stringr::str_remove_all(extracted, "[()]"),
+    extracted = stringr::str_extract(title, "\\(?10\\.\\S*|\\(?https?://\\S+\\)?"),
+    extracted = ifelse(stringr::str_detect(extracted, "^\\(.*\\)$"),
+                       stringr::str_replace_all(extracted, "^\\(|\\)$", ""),
+                       extracted),
     doi = ifelse(stringr::str_detect(extracted, "^10\\."), paste0("https://doi.org/", extracted), extracted),
-    title = stringr::str_replace_all(title, "\\(?10\\.\\S*|https?://\\S+\\)?", "")
+    title = stringr::str_replace(title, "\\(?10\\.\\S*|\\(?https?://\\S+\\)?", "") %>% str_trim()
   ) %>%
   select(id, title, tags, doi)
 
