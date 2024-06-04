@@ -117,7 +117,7 @@ server <- function(input, output, session) {
     } else {
       sel <- c(input$tagInput, "Show always")
       statements %>%
-        filter(sapply(tags, function(tag_list) any(sel %in% tag_list)))
+        filter(sapply(tags, function(tag_list) any(tolower(sel) %in% tolower(tag_list))))
     }
   })
 
@@ -128,7 +128,7 @@ server <- function(input, output, session) {
     } else {
       sel <- c(input$tagInput, "Show always")
       resources %>%
-        filter(sapply(tags, function(tag_list) any(sel %in% tag_list)))
+        filter(sapply(tags, function(tag_list) any(tolower(sel) %in% tolower(tag_list))))
     }
   })
 
