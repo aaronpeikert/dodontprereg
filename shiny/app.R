@@ -13,7 +13,10 @@ source("fix_shinysurveys.R")
 survey_questions <- read.csv("questions.csv")
 
 all_tags <- function(questions){
-  unlist(strsplit(pull(questions, tags_implied), ","))
+  unlist(strsplit(pull(questions, tags_implied), ",")) %>%
+    unique() %>%
+    na.omit() %>%
+    sort()
 }
 
 ui <- fluidPage(
@@ -29,7 +32,7 @@ ui <- fluidPage(
     tabPanelBody("panel2",
                  sidebarLayout(
                    sidebarPanel(
-                     selectInput("tagInput", "Choose a tag to filter:",
+                     selectizeInput("tagInput", "Choose a tag to filter:",
                                  choices = all_tags(survey_questions),
                                  multiple = TRUE)
                    ),
