@@ -76,6 +76,7 @@ server <- function(input, output, session) {
       surveyOutput(filtered_questions, "Welcome to the Do's and Don'ts of Pre-Registration",
                    "To help us identify the materials relevant to your current situation, please answer a couple of questions.")
     } else {
+      message("Liking NULL")
       NULL
     }
   })
@@ -151,11 +152,10 @@ server <- function(input, output, session) {
 
     new_results <- shinysurveys::getSurveyData() %>% tidyr::separate_longer_delim(response, delim = ",")
 
-
-
     if (survey_step() == 1) {
       if (length(setdiff(new_results$response, c("Report deviations after a pre-reg", "Convince someone / decide for myself whether to pre-register"))) == 0) {
-        finish <- TRUE # Finish the survey
+        survey_step(max(survey_questions()$survey_id) + 10) # Finish the survey
+
       } else if (!"Work on a pre-registration" %in% new_results$response) {
         survey_step(2) # Skip step 2
       }
@@ -180,7 +180,7 @@ server <- function(input, output, session) {
     survey_step(survey_step() + 1)
     survey_results(bind_rows(survey_results(), new_results))
 
-    if (survey_step() > max(survey_questions()$survey_id) || finish) {
+    if (survey_step() > max(survey_questions()$survey_id)) {
       final_results <- left_join(survey_results(), survey_questions(), join_by(question_id == input_id, response == option), copy = TRUE)
       tags <- all_tags(final_results)
       print(tags)
