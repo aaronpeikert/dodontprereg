@@ -1572,133 +1572,129 @@ statements:
     feasible.
 resources:
 - id: 1
-  title: 'Alpha justification Daniel Lakens shiny app: https://shiny.ieis.tue.nl/JustifyAlpha/
-    and paper: https://doi.org/10.1177/25152459221080396'
+  title: 'Alpha justification Daniel Lakens shiny app:  and paper: https://doi.org/10.1177/25152459221080396'
   tags:
   - Pre data collection
-  doi: 10.1177/25152459221080396
+  doi: https://shiny.ieis.tue.nl/JustifyAlpha/
 - id: 2
-  title: AsPredicted (https://aspredicted.org/)
+  title: AsPredicted
   tags:
   - - Hours
     - Minimal
     - Pre data collection
-  doi: .na.character
+  doi: https://aspredicted.org/
 - id: 3
   title: Bakker et al. (2020). Ensuring the quality and specificity of preregistrations.
-    https://doi.org/10.1371/journal.pbio.3000937
   tags:
   - More info
-  doi: 10.1371/journal.pbio.3000937
+  doi: https://doi.org/10.1371/journal.pbio.3000937
 - id: 4
   title: Branney, P. E., Brooks, J., Kilby, L., Newman, K., Norris, E., Pownall, M.,
     ... & Whitaker, C. M. (2023). Three steps to open science for qualitative research
-    in psychology. Social and Personality Psychology Compass, e12728. https://compass.onlinelibrary.wiley.com/doi/full/10.1111/spc3.12728
+    in psychology. Social and Personality Psychology Compass, e12728.
   tags:
   - Qualitative
-  doi: 10.1111/spc3.12728
+  doi: https://compass.onlinelibrary.wiley.com/doi/full/10.1111/spc3.12728
 - id: 5
   title: 'Claesen, A., Gomes, S., Tuerlinckx, F., & Vanpaemel, W. (2021). Comparing
     dream to reality: an assessment of adherence of the first generation of preregistered
-    studies. Royal Society Open Science, 8(10), 211037. https://doi.org/10.1098/rsos.211037'
+    studies. Royal Society Open Science, 8(10), 211037.'
   tags:
   - - Deviations
     - More info
-  doi: 10.1098/rsos.211037
+  doi: https://doi.org/10.1098/rsos.211037
 - id: 6
   title: Deviation_checklist_PRP_QUANT.xlsx. (ZPID). Google Docs. Retrieved July 9,
-    2023, from https://docs.google.com/spreadsheets/d/1lbUj_8C0gob63wv_6QLsQunmzNh9Ig3L/edit?usp=sharing&ouid=114975032714742083647&rtpof=true&sd=true
+    2023, from
   tags:
   - - Deviations
     - Post data collection
-  doi: .na.character
+  doi: https://docs.google.com/spreadsheets/d/1lbUj_8C0gob63wv_6QLsQunmzNh9Ig3L/edit?usp=sharing&ouid=114975032714742083647&rtpof=true&sd=true
 - id: 7
-  title: EEG ERP preregistration template (https://osf.io/preprints/metaarxiv/4nvpt/)
+  title: EEG ERP preregistration template
   tags:
   - - Days
     - Neuroimaging/Brain research
     - Good practice
     - Pre data collection
-  doi: .na.character
+  doi: https://osf.io/preprints/metaarxiv/4nvpt/
 - id: 8
   title: Ferguson et al. (2023). Survey of open science practices and attitudes in
-    the social sciences. https://doi.org/10.1038/s41467-023-41111-1
+    the social sciences.
   tags:
   - More info
-  doi: 10.1038/s41467-023-41111-1
+  doi: https://doi.org/10.1038/s41467-023-41111-1
 - id: 9
-  title: For clinical trials (might be relevant for psychology too) https://clinicaltrials.gov/
+  title: For clinical trials (might be relevant for psychology too)
   tags:
   - Clinical trial
-  doi: .na.character
+  doi: https://clinicaltrials.gov/
 - id: 10
-  title: 'Gdoc: https://docs.google.com/document/d/1fU-EY36gId9FWHsP4-lE2SF9IVCFBMKUzBJmHD9bBYQ/edit?usp=sharing'
+  title: 'Gdoc:'
   tags:
   - - Days
     - Gold standard
     - Pre data collection
     - Systematic review
-  doi: .na.character
+  doi: https://docs.google.com/document/d/1fU-EY36gId9FWHsP4-lE2SF9IVCFBMKUzBJmHD9bBYQ/edit?usp=sharing
 - id: 11
-  title: 'Google doc: https://docs.google.com/document/d/1gkN0Jp6Gu7GIA4Ne4YCDZ61nCLQRgt32moRdUg9AnVg/edit?usp=sharing
-    ; R Markdown as package: https://github.com/crsh/prereg ; R Markdown: https://github.com/BartlettJE/BartlettJE.github.io/blob/master/RMarkdown-scripts/OSF%20preregistration%20template.Rmd'
+  title: 'Google doc:  ; R Markdown as package: https://github.com/crsh/prereg ; R
+    Markdown: https://github.com/BartlettJE/BartlettJE.github.io/blob/master/RMarkdown-scripts/OSF%20preregistration%20template.Rmd'
   tags:
   - - Days
     - Gold standard
     - Pre data collection
-  doi: .na.character
+  doi: https://docs.google.com/document/d/1gkN0Jp6Gu7GIA4Ne4YCDZ61nCLQRgt32moRdUg9AnVg/edit?usp=sharing
 - id: 12
   title: Hardwicke & Wagenmakers. (2023). Reducing bias, increasing transparency and
-    calibrating confidence with preregistration. https://doi.org/10.1038/s41562-022-01497-2
+    calibrating confidence with preregistration.
   tags:
   - More info
-  doi: 10.1038/s41562-022-01497-2
+  doi: https://doi.org/10.1038/s41562-022-01497-2
 - id: 13
   title: 'Heirene, R., LaPlante, D., Louderback, E. R., Keen, B., Bakker, M., Serafimovska,
     A., & Gainsbury, S. M. (2021). Preregistration specificity & adherence: A review
-    of preregistered gambling studies & cross-disciplinary comparison. In PsyArXiv.
-    https://doi.org/10.31234/osf.io/nj4es'
+    of preregistered gambling studies & cross-disciplinary comparison. In PsyArXiv.'
   tags:
   - - Deviations
     - More info
-  doi: 10.31234/osf.io/nj4es
+  doi: https://doi.org/10.31234/osf.io/nj4es
 - id: 14
   title: 'Kathawalla, U.-K., Silverstein, P., & Syed, M. (2021). Easing into open
     science: A guide for graduate students and their advisors. Collabra. Psychology,
-    7(1). https://doi.org/10.1525/collabra.18684'
+    7(1).'
   tags:
   - - Beginner
     - PhD
-  doi: 10.1525/collabra.18684
+  doi: https://doi.org/10.1525/collabra.18684
 - id: 15
   title: 'Lakens, D. (2019). The value of preregistration for psychological science:
-    A conceptual analysis. https://www.jstage.jst.go.jp/article/sjpr/62/3/62_221/_pdf'
+    A conceptual analysis.'
   tags:
   - More info
-  doi: .na.character
+  doi: https://www.jstage.jst.go.jp/article/sjpr/62/3/62_221/_pdf
 - id: 16
   title: Lakens, D. (2023, December 18). When and How to Deviate from a Preregistration.
-    https://doi.org/10.31234/osf.io/ha29k
   tags:
   - Deviations
-  doi: 10.31234/osf.io/ha29k
+  doi: https://doi.org/10.31234/osf.io/ha29k
 - id: 17
   title: 'Logg, J. M., & Dorison, C. A. (2021). preregistration: Weighing costs and
     benefits for researchers. Organizational Behavior and Human Decision Processes,
-    167, 18–27. https://doi.org/10.1016/j.obhdp.2021.05.006'
+    167, 18–27.'
   tags:
   - - More info
     - Bullet points
-  doi: 10.1016/j.obhdp.2021.05.006
+  doi: https://doi.org/10.1016/j.obhdp.2021.05.006
 - id: 18
-  title: PRISMA-P (http://prisma-statement.org/Extensions/Protocols)
+  title: PRISMA-P
   tags:
   - - Days
     - Literature review
     - Good practice
     - Pre data collection
     - Post data collection
-  doi: .na.character
+  doi: http://prisma-statement.org/Extensions/Protocols
 - id: 19
   title: PROSPERO
   tags:
@@ -1710,115 +1706,112 @@ resources:
   doi: .na.character
 - id: 20
   title: 'Peikert, A. (2021) Reproducible Research in R: A Tutorial on How to Do the
-    Same Thing More Than Once. https://doi.org/10.3390/psych3040053'
+    Same Thing More Than Once.'
   tags:
   - Scriptable
-  doi: 10.3390/psych3040053
+  doi: https://doi.org/10.3390/psych3040053
 - id: 21
-  title: 'Planned comparison by Umberto Granziol apRiori shiny app: https://cran.r-project.org/web/packages/appRiori/index.html'
+  title: 'Planned comparison by Umberto Granziol apRiori shiny app:'
   tags:
   - - Pre data collection
     - Power analysis
-  doi: .na.character
+  doi: https://cran.r-project.org/web/packages/appRiori/index.html
 - id: 22
   title: 'Prereg package - Provides a collection of templates to author preregistration
-    documents for scientific studies in PDF format:  https://cran.r-project.org/web/packages/prereg/index.html'
+    documents for scientific studies in PDF format:'
   tags:
   - - Scriptable
     - Open Software
-  doi: .na.character
+  doi: https://cran.r-project.org/web/packages/prereg/index.html
 - id: 23
   title: 'Preregistration Planning and Deviation Documentation: Challenges, implications,
-    and suggested template. (n.d.). Google Docs. Retrieved July 9, 2023, from https://docs.google.com/document/d/1WKb2HAoSmgUndzcI1DDYuGyUpLFwcmuSn5OAIlI32KI/edit?pli=1'
+    and suggested template. (n.d.). Google Docs. Retrieved July 9, 2023, from'
   tags:
   - - Deviations
     - Post data collection
-  doi: .na.character
+  doi: https://docs.google.com/document/d/1WKb2HAoSmgUndzcI1DDYuGyUpLFwcmuSn5OAIlI32KI/edit?pli=1
 - id: 24
-  title: Preregistration of Qualitative Research (Haven et al., 2020) (https://doi.org/10.1080/08989621.2019.1580147)
+  title: Preregistration of Qualitative Research (Haven et al., 2020)
   tags:
   - - Days
     - Qualitative
     - Good practice
     - Pre data collection
-  doi: 10.1080/08989621.2019.1580147)
+  doi: https://doi.org/10.1080/08989621.2019.1580147
 - id: 25
-  title: 'Prospective and retrospective Design Analysis R package: https://cran.r-project.org/web/packages/PRDA/index.html'
+  title: 'Prospective and retrospective Design Analysis R package:'
   tags:
   - Power analysis
-  doi: .na.character
+  doi: https://cran.r-project.org/web/packages/PRDA/index.html
 - id: 26
   title: "Psychological Research Preregistration-Quantitative (aka PRP-QUANT):\n-
-    https://prereg-psych.org/index.php/rrp/templates\n- http://dx.doi.org/10.23668/psycharchives.4584
-    \n- R Markdown (https://github.com/crsh/prereg)"
+    \n- http://dx.doi.org/10.23668/psycharchives.4584 \n- R Markdown (https://github.com/crsh/prereg)"
   tags:
   - - Days
     - Gold standard
     - Pre data collection
     - Quantitative
-  doi: 10.23668/psycharchives.4584
+  doi: https://prereg-psych.org/index.php/rrp/templates
 - id: 27
-  title: Registered Report Protocol Preregistration (https://osf.io/93znh/)
+  title: Registered Report Protocol Preregistration
   tags:
   - - Days
     - Registered Report
     - Good practice
     - Pre data collection
-  doi: .na.character
+  doi: https://osf.io/93znh/
 - id: 28
-  title: 'Replication recipe (Brandt et al., 2013) (https://www.sciencedirect.com/science/article/pii/S0022103113001819)
-    ; Post-completion: gdoc: https://docs.google.com/document/d/1Sm1I0VhhW-rDTdIVa5sRB2HYQlWO0Sh5jJm15gvqgVo/edit?usp=sharing
+  title: 'Replication recipe (Brandt et al., 2013)  ; Post-completion: gdoc: https://docs.google.com/document/d/1Sm1I0VhhW-rDTdIVa5sRB2HYQlWO0Sh5jJm15gvqgVo/edit?usp=sharing
     ; word: https://osf.io/9rp6j/'
   tags:
   - - Days
     - Good practice
     - Post data collection
-  doi: .na.character
+  doi: https://www.sciencedirect.com/science/article/pii/S0022103113001819
 - id: 29
-  title: 'Replication recipe (Brandt et al., 2013) (https://www.sciencedirect.com/science/article/pii/S0022103113001819)
-    ; Registration: gdoc: https://docs.google.com/document/d/1alPrRwktf_JlAAxQfTKl7qH3EUPGNb1gB5VwGYdcgc0/edit?usp=sharing
+  title: 'Replication recipe (Brandt et al., 2013)  ; Registration: gdoc: https://docs.google.com/document/d/1alPrRwktf_JlAAxQfTKl7qH3EUPGNb1gB5VwGYdcgc0/edit?usp=sharing
     ; word: https://osf.io/4jd46/'
   tags:
   - - Days
     - Good practice
     - Pre data collection
-  doi: .na.character
+  doi: https://www.sciencedirect.com/science/article/pii/S0022103113001819
 - id: 30
-  title: 'Reporting deviations from preregistration: https://osf.io/xv5rp/'
+  title: 'Reporting deviations from preregistration:'
   tags:
   - - Deviations
     - Post data collection
-  doi: .na.character
+  doi: https://osf.io/xv5rp/
 - id: 31
-  title: 'Sample size justification Daniel Lakens shiny app: https://shiny.ieis.tue.nl/sample_size_justification/'
+  title: 'Sample size justification Daniel Lakens shiny app:'
   tags:
   - - Pre data collection
     - Power analysis
     - Days
-  doi: .na.character
+  doi: https://shiny.ieis.tue.nl/sample_size_justification/
 - id: 32
-  title: Scoping review preregistration (https://doi.org/10.23668/psycharchives.5631)
+  title: Scoping review preregistration
   tags:
   - - Days
     - Scoping Review
     - Good practice
     - Pre data collection
-  doi: 10.23668/psycharchives.5631)
+  doi: https://doi.org/10.23668/psycharchives.5631
 - id: 33
-  title: 'Secondary Data Preregistration template on Open Science Framework https://docs.google.com/document/d/1p6UE2b0D0ON4XEccOCOU1pdaCTiyGLOfP-g-8Ayxylk/edit?usp=sharing  ;
-    Article: van den Akker et al., 2021 https://doi.org/10.15626/MP.2020.2625'
+  title: 'Secondary Data Preregistration template on Open Science Framework   ; Article:
+    van den Akker et al., 2021 https://doi.org/10.15626/MP.2020.2625'
   tags:
   - - Days
     - Secondary data
     - Good practice
     - Post data collection
-  doi: 10.15626/MP.2020.2625
+  doi: https://docs.google.com/document/d/1p6UE2b0D0ON4XEccOCOU1pdaCTiyGLOfP-g-8Ayxylk/edit?usp=sharing
 - id: 34
   title: 'Simmons, J., Nelson, L., & Simonsohn, U. (2021). Pre‐registration: Why and
-    how. Journal of Consumer Psychology, 31(1), 151–162. https://doi.org/10.1002/jcpy.1208'
+    how. Journal of Consumer Psychology, 31(1), 151–162.'
   tags:
   - Gold standard
-  doi: 10.1002/jcpy.1208
+  doi: https://doi.org/10.1002/jcpy.1208
 - id: 35
   title: 'Simulation Studies for Methodological Research in Psychology: A Standardized
     Template for Planning, Preregistration, and Reporting'
@@ -1830,17 +1823,16 @@ resources:
   doi: .na.character
 - id: 36
   title: 'Spitzer L, Mueller S (2023) Registered report: Survey on attitudes and experiences
-    regarding preregistration in psychological research. PLoS ONE 18(3): e0281086.
-    https://doi.org/10.1371/journal.pone.0281086'
+    regarding preregistration in psychological research. PLoS ONE 18(3): e0281086.'
   tags:
   - More info
-  doi: 10.1371/journal.pone.0281086
+  doi: https://doi.org/10.1371/journal.pone.0281086
 - id: 37
   title: 'Toth et al. (2020). Study Preregistration: An Evaluation of a Method for
-    Transparent Reporting. https://doi.org/10.1007/s10869-020-09695-3'
+    Transparent Reporting.'
   tags:
   - More info
-  doi: 10.1007/s10869-020-09695-3
+  doi: https://doi.org/10.1007/s10869-020-09695-3
 - id: 38
   title: 'Van den Akker, O., Bakker, M., van Assen, M. A., Pennington, C. R., Verweij,
     L., Elsherif, M., ... & Wicherts, J. (2023). The effectiveness of preregistration
@@ -1854,45 +1846,44 @@ resources:
   title: 'Van den Akker, O., van Assen, M. A. L. M., Bakker, M., Elsherif, M. M.,
     Wong, T. K., & Wicherts, J. M. (2023, May 19). Preregistration in practice: A
     comparison of preregistered and non-preregistered studies in psychology.  Behaviour
-    Research Methods. https://doi.org/10.31222/osf.io/fhdbs'
+    Research Methods.'
   tags:
   - More info
-  doi: 10.31222/osf.io/fhdbs
+  doi: https://doi.org/10.31222/osf.io/fhdbs
 - id: 40
-  title: fmri preregistration template (https://www.psycharchives.org/en/item/eaf562e3-69a7-46a4-925a-05a982ef1a0b)
+  title: fmri preregistration template
   tags:
   - - Days
     - Neuroimaging/Brain research
     - Good practice
     - Pre data collection
-  doi: .na.character
+  doi: https://www.psycharchives.org/en/item/eaf562e3-69a7-46a4-925a-05a982ef1a0b
 - id: 41
-  title: fmri preregistration template https://osf.io/6juft/
+  title: fmri preregistration template
   tags:
   - - Days
     - Neuroimaging/Brain research
     - Good practice
     - Pre data collection
-  doi: .na.character
+  doi: https://osf.io/6juft/
 - id: 42
-  title: https://osf.io/zab38/wiki/home/ (https://osf.io/zab38/)
+  title: (https://osf.io/zab38/)
   tags:
   - Gold standard
-  doi: .na.character
+  doi: https://osf.io/zab38/wiki/home/
 - id: 43
-  title: 'osf: https://osf.io/cte9k'
+  title: 'osf:'
   tags:
   - - Days
     - Modeling/simulation-based research
     - Pre data collection
-  doi: .na.character
+  doi: https://osf.io/cte9k
 - id: 44
-  title: 'van ‘t Veer and Giner-Sorolla (2016) (https://www.sciencedirect.com/science/article/pii/S0022103116301925)
-    ; Links: Gdoc: https://docs.google.com/document/d/1eebh7D4WFIYNmYFAkGK7Y7CdbfM-ANkXRWTK7kJqNgA/edit?usp=sharing
+  title: 'van ‘t Veer and Giner-Sorolla (2016)  ; Links: Gdoc: https://docs.google.com/document/d/1eebh7D4WFIYNmYFAkGK7Y7CdbfM-ANkXRWTK7kJqNgA/edit?usp=sharing
     ; Word: https://osf.io/ce3hr/ ; OSF: https://osf.io/k5wns/'
   tags:
   - - Days
     - Good practice
     - Pre data collection
     - Correlational
-  doi: .na.character
+  doi: https://www.sciencedirect.com/science/article/pii/S0022103116301925

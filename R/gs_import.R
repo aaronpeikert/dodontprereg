@@ -20,7 +20,7 @@ statements_long <- statements %>%
                values_to = "Value",
                values_drop_na = TRUE) %>%
   select(-Tag) %>%
-  group_by(Statement) %>%
+  group_by(Statement, Details) %>%
   summarise(Do = c("don't", "do")[first(Do)+1],
             tags = list(Value),
             .groups = 'drop')
@@ -32,8 +32,9 @@ statements_long <- statements_long %>%
 # Rename columns to match YAML structure
 statements_long <- statements_long %>%
   rename(title = Statement,
+         details = Details,
          please = Do) %>%
-  select(id, title, please, tags)
+  select(id, title, please, tags, details)
 
 resources_long <- resources %>%
   rename(Resource = `resource/template`) %>%
@@ -53,7 +54,12 @@ resources_long <- resources_long %>%
 # Rename columns to match YAML structure
 resources_long <- resources_long %>%
   rename(title = Resource) %>%
-  mutate(doi = stringr::str_extract(title, "10\\.\\S*")) %>%
+  mutate(
+    extracted = stringr::str_extract(title, "\\(?10\\.\\S*|https?://\\S+\\)?"),
+    extracted = stringr::str_remove_all(extracted, "[()]"),
+    doi = ifelse(stringr::str_detect(extracted, "^10\\."), paste0("https://doi.org/", extracted), extracted),
+    title = stringr::str_replace_all(title, "\\(?10\\.\\S*|https?://\\S+\\)?", "")
+  ) %>%
   select(id, title, tags, doi)
 
 # Convert to a list for YAML
@@ -61,4 +67,4 @@ list_data <- list(statements = split(statements_long, seq(nrow(statements_long))
                   resources = split(resources_long, seq(nrow(resources_long))) %>% unname())
 
 # Save the data as a YAML file
-write_yaml(list_data, "myapp/import_data.yml")
+write_yaml(list_data, "shiny/import_data.yml")

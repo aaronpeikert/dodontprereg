@@ -1,0 +1,72 @@
+---
+title: "Search data repositories"
+author: "Lukas Wallrich"
+date: "2023-10-27"
+output: html_document
+---
+
+
+```{r setup, include=FALSE}
+library(tidyverse)
+# For JSON mode, currently need the development version 
+# remotes::install_github("irudnyts/openai", ref = "r6")
+library(openai)
+library(googlesheets4)
+```
+
+## Get statements
+
+```{r}
+# Specify the URL of the Google Spreadsheet
+spreadsheet_url <- "https://docs.google.com/spreadsheets/d/1SSGMwThXidvQ_ACh4A4RltSF-JLbfRq3_qrLPi5Cee8/edit#gid=836920715"
+
+gs4_deauth()
+
+# Read the Google Spreadsheet without authentication
+statements <- read_sheet(spreadsheet_url, sheet = "do's and don'ts-statements w/ tags")
+```
+
+
+## ChatGPT screening
+
+```{r}
+
+statements$Statement <- str_replace(statements$Statement, "^.{1,4}:", "") %>% str_trim()
+
+client <- OpenAI()
+
+insistent_request <- possibly(insistently(client$chat$completions$create, quiet = FALSE), otherwise = list(), quiet = FALSE)
+
+p <- progress_estimated(nrow(statements))
+
+
+resp <- list()
+
+i <- 4
+
+for (i in i:nrow(statements)) {
+  
+  current_resp <- insistent_request(
+    model = "gpt-4o",
+    max_tokens = 300,
+     messages = list(
+        list(
+            "role" = "user",
+            "content" = paste({
+            '
+I am creating a list of advice statements for scientists who wish to pre-register research (in the behavioural sciences, broadly understood). I have created the statements - but now need to explain and justify them in some more detail. Return 2-3 sentences that explain why the below is important, and how it should be done. Do not repeat the statement, or return anything else, and remember that this is about pre-registration specifically, rather than good research in general. \n\n
+
+STATEMENT: 
+'},
+statements$Statement[i]
+        )
+    )))
+  
+  resp[i] <- current_resp$choices[[1]]$message$content
+  p$tick()$print()
+}
+
+resp %>% unlist() %>% clipr::write_clip()
+
+
+```
