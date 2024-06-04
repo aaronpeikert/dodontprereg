@@ -6,6 +6,10 @@ statements:
   - - After prereg
     - Minimal
     - Show always
+  details: Reporting all pre-registered analyses with the pre-registered approach
+    ensures transparency and accountability in research. It helps to minimize biases
+    and data dredging by committing to a specified analysis plan beforehand, thereby
+    maintaining the integrity of the findings and enabling replication.
 - id: 2
   title: Be clear about the objective.
   please: do
@@ -14,12 +18,24 @@ statements:
     - Pre data collection
     - Minimal
     - Research clarity
+  details: Clearly defining the objective in a pre-registration ensures that the research
+    question is unambiguous and the study's purpose is transparent. This adds to the
+    replicability and credibility of the research by delineating what the study aims
+    to achieve and helps assess whether the research outcomes align with initial goals,
+    reducing the risk of hypothesis flexibility or post hoc storytelling.
 - id: 3
   title: Be clear about what you do not know. (add example for this point)
   please: do
   tags:
   - - During prereg-prep
     - Conceptual consideration
+  details: Acknowledging what you do not know in your pre-registration can help highlight
+    areas of uncertainty and indicate where exploratory analyses might be necessary.
+    For example, you might state that while you hypothesize a specific relationship
+    between two variables, you are unsure about the effect size, which could guide
+    the sample size calculation or the interpretation of results. This transparency
+    builds trust and allows for a better understanding of the research's limitations
+    and scope.
 - id: 4
   title: Be more detailed than you think you should be.
   please: do
@@ -32,6 +48,11 @@ statements:
     - Mix
     - Verbose
     - Research clarity
+  details: Being overly detailed in your pre-registration helps to clearly outline
+    your hypotheses, methods, and analysis plans, which reduces ambiguity and potential
+    biases that could arise during the study. This thoroughness ensures transparency
+    and reproducibility, making it easier for others to understand, replicate, and
+    build upon your work.
 - id: 5
   title: Be prepared that it can take a good amount of time and energy.
   please: do
@@ -40,6 +61,11 @@ statements:
     - Pre data collection
     - Beginner
     - Time Management
+  details: Pre-registration involves thorough planning and articulating detailed research
+    protocols, which can be time-consuming and require significant mental effort to
+    ensure precision and clarity. Investing this time upfront can lead to more rigorous
+    and reproducible research, as it helps to mitigate bias and maintain transparency
+    throughout the study.
 - id: 6
   title: Be realistic.
   please: do
@@ -48,12 +74,22 @@ statements:
     - Conceptual consideration
     - Hours available
     - Good practice
+  details: When pre-registering research, it's crucial to set achievable goals and
+    expectations to ensure that the study can be completed effectively with available
+    resources and within feasible time frames. Being realistic prevents overpromising
+    and underdelivering, thus maintaining the integrity of the research and avoiding
+    unnecessary deviations from the pre-registered plan.
 - id: 7
   title: Be transparent about your prior engagement with the data.
   please: do
   tags:
   - - Secondary data
     - Post data collection
+  details: Transparency about prior engagement with the data is crucial in pre-registration
+    because it helps mitigate potential biases and maintains the integrity of the
+    research process. Researchers should clearly document any preliminary analyses
+    or interactions with the data before the official study begins to allow others
+    to accurately interpret the results and the risk of data-driven hypotheses.
 - id: 8
   title: Become familiar with preregistration formats.
   please: do
@@ -63,11 +99,20 @@ statements:
     - Novice
     - Beginner
     - Format selection
+  details: Understanding preregistration formats is crucial as it ensures that your
+    study's design, hypotheses, and analysis plans are clearly documented and can
+    be reliably followed. Familiarity with various formats, such as the Open Science
+    Framework or AsPredicted, allows you to choose the one that best fits your study’s
+    requirements and increases the transparency and credibility of your research.
 - id: 9
   title: Check all versions and the dates they were registered
   please: do
   tags:
   - Quality-assessment
+  details: Ensuring all versions and their registration dates are checked allows for
+    transparency and accuracy in the research process. This helps in verifying that
+    all alterations to the pre-registered plan are properly documented, which maintains
+    the integrity of the study by showing a clear timeline of decisions and changes.
 - id: 10
   title: Choose a format.
   please: do
@@ -77,6 +122,11 @@ statements:
     - Show always
     - Minimal
     - Format selection
+  details: Selecting a format for pre-registration is crucial as it ensures consistency
+    and comprehensiveness across studies, facilitating peer review and replication.
+    Researchers should choose an established format like the Open Science Framework
+    (OSF) or the AsPredicted template, which provide structured guidance to help clearly
+    articulate hypotheses, methods, and analysis plans.
 - id: 11
   title: Choose a preregistration platform/journal.
   please: do
@@ -86,6 +136,12 @@ statements:
     - Show always
     - Minimal
     - Format selection
+  details: Choosing a preregistration platform or journal is critical because it ensures
+    that your research design is transparently documented and time-stamped prior to
+    data collection, which helps prevent selective reporting and p-hacking. Selecting
+    a reputable platform or journal also facilitates peer review and increases the
+    credibility and accessibility of your preregistered study, thereby fostering greater
+    trust within the scientific community.
 - id: 12
   title: Choose a template.
   please: do
@@ -96,6 +152,11 @@ statements:
     - Minimal
     - Hours available
     - Format selection
+  details: Choosing a template for pre-registration ensures that all essential components
+    of the study design and analysis plan are systematically addressed, reducing the
+    risk of omitting critical details. Utilizing established templates from reputable
+    sources also facilitates transparency and comparability between studies, which
+    is fundamental in fostering reproducibility in the behavioral sciences.
 - id: 13
   title: Clearly state in the manuscript that the study was preregistered, and link
     to your preregistration from your manuscript.
@@ -104,6 +165,11 @@ statements:
   - - After prereg
     - Minimal
     - Show always
+  details: Making your preregistration openly accessible directly in your manuscript
+    enhances transparency and accountability, allowing others to see your initial
+    hypotheses, methods, and analysis plans. This practice not only bolsters the credibility
+    of your findings but also enables other researchers to attempt replication and
+    follow-up studies with a clearer understanding of your research design.
 - id: 14
   title: Consider simulating your data in order to develop the analysis plan and ensure
     that your code works.
@@ -117,45 +183,91 @@ statements:
     - Pre data collection
     - Days available
     - Weeks available
+  details: Simulating your data allows you to identify and resolve potential issues
+    in your analysis plan before collecting actual data, thereby enhancing the reliability
+    and robustness of your pre-registered study. This process also helps to ensure
+    that your code runs correctly and efficiently, reducing the risk of encountering
+    unexpected errors or inconsistencies later on.
 - id: 15
   title: Describe data processing transparently and make it reproducible
   please: do
   tags:
   - Show always
+  details: Transparent and reproducible data processing ensures that other researchers
+    can follow and verify the exact steps taken in your study, increasing the credibility
+    and replicability of your findings. When pre-registering, provide detailed protocols
+    for data cleaning, transformation, and analysis, including any software or scripts
+    used, so that every part of the data journey can be independently validated or
+    challenged.
 - id: 16
   title: Disclose where you expect to be flexible.
   please: do
   tags:
   - - During prereg-prep
     - Conceptual consideration
+  details: Disclosing anticipated areas of flexibility is crucial in pre-registration
+    because it delineates which aspects of the study may adapt to unforeseen circumstances,
+    thus maintaining the integrity of the pre-specified aspects. This ensures transparency
+    and helps distinguish between pre-planned flexibility and post hoc changes, enhancing
+    the credibility of the research findings.
 - id: 17
   title: Do describe target population, targeted sample size and sampling strategy
   please: do
   tags:
   - Qualitative
+  details: Describing the target population, targeted sample size, and sampling strategy
+    in your pre-registration is essential as it ensures clarity and transparency regarding
+    the study's scope and potential generalizability. It helps avoid post-hoc adjustments
+    that could bias the results and provides a clear framework for evaluating whether
+    the sample is representative and sufficient to detect the anticipated effects.
+    Explicitly stating these details ahead of time enhances the credibility and reproducibility
+    of your research.
 - id: 18
   title: Do detail the sources you are planning to use for archives.
   please: do
   tags:
   - Qualitative
+  details: Detailing the sources for archives in your pre-registration is essential
+    for transparency and reproducibility, enabling others to understand and verify
+    your choice of data sources. Clearly specifying these sources ensures that other
+    researchers can assess the credibility of the data and replicate or build upon
+    your work accurately.
 - id: 19
   title: Do detail where the project will take place, when it will take place and
     the sites being investigated.
   please: do
   tags:
   - Qualitative
+  details: Detailing where, when, and the specific sites of the project is crucial
+    for transparency and reproducibility in pre-registration. This information allows
+    others to understand the research context, assess the feasibility and validity
+    of the study, and replicate the study under similar conditions if needed. Providing
+    these details helps ensure that the study can be independently verified and adds
+    credibility to the research methodology.
 - id: 20
   title: Do include which software version you plan to use.
   please: do
   tags:
   - - Gold standard
     - Scriptable
+  details: Specifying the software version ensures that your analysis can be accurately
+    replicated and evaluated by others, since different versions can have varying
+    functionalities or bugs that might influence the results. Detailed documentation
+    of the software version used also allows future researchers to understand the
+    exact computational environment, thus increasing the transparency and reliability
+    of your study.
 - id: 21
   title: Do think about whether your data is personal, sensitive in order to fit with
     the guidelines of data protection
   please: do
   tags:
   - Quantitative and Qualitative
+  details: Ensuring your data complies with data protection guidelines is crucial
+    to maintain the trust of your participants and to meet legal and ethical standards.
+    Pre-registering your approach to handling personal and sensitive data demonstrates
+    your commitment to ethical research and transparency, and helps reviewers and
+    other researchers understand the measures you have taken to protect participant
+    confidentiality.
 - id: 22
   title: Don't assume that other people know your research as well as you do.
   please: don't
@@ -165,6 +277,11 @@ statements:
     - Intermediate
     - Replication
     - Collaboration
+  details: When pre-registering your research, it is crucial to provide clear, detailed
+    descriptions of your hypotheses, methods, and planned analyses. This ensures that
+    others can accurately understand and replicate your study, thereby enhancing transparency
+    and credibility. Clear explanations reduce ambiguity and allow for more precise
+    evaluation of your research design and predictions.
 - id: 23
   title: Don't assume that your project is ineligible for preregistration.
   please: don't
@@ -176,6 +293,11 @@ statements:
     - Post data collection
     - Secondary data
     - Strictly exploratory
+  details: Pre-registration is applicable to a wide range of study designs, including
+    exploratory research, observational studies, and even qualitative methods. By
+    pre-registering, you can clarify your hypotheses, research methods, and analysis
+    plans ahead of time, which enhances transparency and trust in your work, regardless
+    of the project's specific nature.
 - id: 24
   title: Don't be afraid of deviating from the preregistered plan if this clearly
     improves the value of the research or for ethical purposes.
@@ -185,6 +307,11 @@ statements:
     - Deviation
     - Intermediate
     - Good practice
+  details: Pre-registration aims to increase transparency and reduce bias, but flexibility
+    can be necessary if new insights arise or unforeseen ethical concerns emerge.
+    Documenting and justifying deviations transparently ensures the credibility of
+    the research while maintaining its integrity by addressing any external factors
+    that necessitated the changes.
 - id: 25
   title: Don't be evil.
   please: don't
@@ -193,6 +320,13 @@ statements:
     - Conceptual consideration
     - Show always
     - Minimal
+  details: Pre-registration is intended to increase the transparency and credibility
+    of research findings by minimizing biases, including those introduced by unethical
+    behavior. By committing to truthful and principled research practices, scientists
+    can help ensure that their studies yield reliable, reproducible, and trustworthy
+    results. This means outlining their hypotheses, methods, and analysis plans in
+    advance and adhering to them strictly, thereby avoiding any temptation to manipulate
+    data or selectively report outcomes.
 - id: 26
   title: Don't be too hard on yourself.
   please: don't
@@ -200,7 +334,11 @@ statements:
   - - During prereg-prep
     - Conceptual consideration
     - Gold standard
-    - Self-compassion
+  details: Pre-registration requires a high level of detail and foresight, which can
+    be challenging and somewhat intimidating. Remember that these skills improve with
+    practice and iteration, and even experienced researchers refine their plans over
+    time. Embrace the learning process and use feedback to make incremental improvements,
+    rather than striving for unattainable perfection.
 - id: 27
   title: Don't ignore your preregistration or just follow it broadly.
   please: don't
@@ -209,6 +347,11 @@ statements:
     - During data collection
     - Post data collection
     - Minimal
+  details: Adhering strictly to your preregistration is crucial because it prevents
+    post-hoc modifications that could introduce bias or inflate false positive rates,
+    thereby preserving the integrity of your results. Detail your plans clearly in
+    the preregistration and vigilantly follow them throughout your research to ensure
+    transparency and reproducibility, which bolsters trust in your findings.
 - id: 28
   title: Don't let the perfect be the enemy of the good.
   please: don't
@@ -217,6 +360,11 @@ statements:
     - Conceptual consideration
     - Good practice
     - Novice
+  details: Pre-registering your research can significantly enhance transparency and
+    credibility, even if the plans are not flawless or fully exhaustive. Striving
+    for perfection can lead to unnecessary delays or prevent researchers from beginning
+    their study, whereas a well-documented and reasonable pre-registration can still
+    provide substantial benefits and can be amended if necessary.
 - id: 29
   title: Don't lie.
   please: don't
@@ -225,6 +373,11 @@ statements:
     - Conceptual consideration
     - Show always
     - Minimal
+  details: Honesty in pre-registration is crucial because it helps maintain the integrity
+    and transparency of the scientific process, ensuring that the research can be
+    replicated and verified by others. Misleading information undermines the purpose
+    of pre-registration, which is to prevent questionable research practices and increase
+    trust in the findings.
 - id: 30
   title: Don't not preregister if there is reason to do it.
   please: don't
@@ -232,6 +385,11 @@ statements:
   - - During prereg-prep
     - Conceptual consideration
     - Minimal
+  details: Pre-registration is essential to combatting issues like publication bias
+    and data dredging by publicly documenting hypotheses and analysis plans before
+    data collection begins. By committing to a pre-registered plan, researchers increase
+    the transparency and credibility of their work, making it clear that results are
+    not the product of post-hoc modifications.
 - id: 31
   title: Don't panic.
   please: don't
@@ -240,6 +398,10 @@ statements:
     - Conceptual consideration
     - Show always
     - Good practice
+  details: Pre-registration can seem daunting at first, but it's a valuable step that
+    ensures the integrity and transparency of your research. Approach it methodically,
+    breaking it down into manageable components, and remember that it's perfectly
+    fine to seek guidance from experienced colleagues or resources.
 - id: 32
   title: Don't submit multiple different pre-registrations for the same project to
     pick one later.
@@ -248,6 +410,11 @@ statements:
   - - During prereg-prep
     - Conceptual consideration
     - Minimal
+  details: Submitting multiple pre-registrations for the same project undermines the
+    transparency and credibility that pre-registration aims to achieve by creating
+    room for selective reporting. Researchers should aim to draft a single, well-considered
+    pre-registration document that clearly outlines their hypotheses, methods, and
+    analysis plans to ensure the integrity and reproducibility of their work.
 - id: 33
   title: Don't treat prereg like it is just a bureaucratic burden/a simple check off
     list.
@@ -257,6 +424,11 @@ statements:
     - Conceptual consideration
     - Minimal
     - Hours available
+  details: Treating preregistration merely as a bureaucratic step undermines its purpose
+    of increasing transparency and accountability in research. It should be viewed
+    as an integral part of the research process that enhances the rigor and credibility
+    of your findings by clearly delineating your hypotheses, methods, and planned
+    analyses ahead of time.
 - id: 34
   title: Don't underspecify to allow for flexibility.
   please: don't
@@ -265,6 +437,11 @@ statements:
     - Conceptual consideration
     - Good practice
     - Hours available
+  details: Underspecifying your pre-registration can compromise the clarity and integrity
+    of your study, as it leaves room for post hoc justifications and data-driven decision-making.
+    Clearly outlining your hypotheses, methods, and analysis plans ensures that your
+    research remains transparent and credible, thus enhancing reproducibility and
+    trust in your findings.
 - id: 35
   title: Expect it to not be 100% perfect the first time around.
   please: do
@@ -274,6 +451,11 @@ statements:
     - Novice
     - Beginner
     - Show always
+  details: Pre-registering research for the first time can be a learning process,
+    and it's normal to encounter challenges or miss elements that could be improved
+    upon later. The important part is to start the practice and iterate with each
+    subsequent attempt. Constructive feedback and reflections on initial attempts
+    will enhance the quality and robustness of future pre-registrations.
 - id: 36
   title: Feel free to include more than what you pre-registered, but clearly distinguish
     between confirmatory vs. exploratory analyses in your write-up.
@@ -282,6 +464,12 @@ statements:
   - - After prereg
     - Show always
     - Mix
+  details: Pre-registration allows for a clear distinction between hypotheses that
+    were established a priori and those that arose during data analysis, which helps
+    mitigate biases and enhances the credibility of your findings. By distinguishing
+    between confirmatory and exploratory analyses in your write-up, you provide transparency
+    about the origins of your hypotheses and avoid misleading readers about the robustness
+    and premeditated nature of your results.
 - id: 37
   title: First state precisely what you want to do, and then include justification
     if your choice deviates from common practice.
@@ -291,6 +479,11 @@ statements:
     - Conceptual consideration
     - Gold standard
     - Verbose
+  details: Clearly stating your research intentions minimizes ambiguity, ensuring
+    that your planned methodology and analyses are transparently communicated. Providing
+    justification for deviations from common practice allows others to understand
+    the rationale behind your choices, enhancing the credibility and reproducibility
+    of your work.
 - id: 38
   title: Give yourself credit for the work you’ve done.
   please: do
@@ -298,6 +491,11 @@ statements:
   - - During prereg-prep
     - Conceptual consideration
     - Good practice
+  details: Pre-registering your research allows you to showcase the rigor and thorough
+    planning involved in your study design, providing transparency and accountability
+    that can enhance your scientific reputation. By documenting your hypotheses, methods,
+    and analysis plans before collecting data, you can clearly demonstrate your commitment
+    to reducing biases and increasing the credibility of your findings.
 - id: 39
   title: Have contingency plans and be transparent about them.
   please: do
@@ -307,17 +505,33 @@ statements:
     - Intermediate
     - Good practice
     - Deviation
+  details: Having contingency plans is crucial because unexpected issues often arise
+    during research, and pre-registration requires forethought about how to handle
+    these deviations. Being transparent about these plans enhances the credibility
+    of the research by demonstrating preparedness and honesty, ensuring that any deviations
+    from the original plan are documented and justifiable.
 - id: 40
   title: If possible, do attach a sample questionnaire or sample guidelines, together
     with informed consent form
   please: do
   tags:
   - Qualitative
+  details: Attaching a sample questionnaire, guidelines, and informed consent form
+    to your pre-registration helps ensure transparency and allows peers to review
+    the exact methodologies and materials you plan to use. This not only bolsters
+    the credibility of your study by demonstrating thorough planning but also aids
+    in the replication of your work by providing clear, standardized procedures for
+    others to follow.
 - id: 41
   title: 'Joke: Do consider a quantitative study and continue the qualitative stuff.'
   please: do
   tags:
   - Qualitative
+  details: Pre-registering quantitative studies alongside qualitative ones helps bolster
+    the robustness of your findings by addressing different dimensions of your research
+    question. By clearly specifying your hypotheses, methods, and analysis plans for
+    quantitative research in advance, you reduce the risk of biases and increase the
+    transparency and replicability of your work.
 - id: 42
   title: Keep in mind why you’re doing it.
   please: do
@@ -325,6 +539,11 @@ statements:
   - - Before prereg
     - Pre data collection
     - Research clarity
+  details: Understanding the purpose behind pre-registration helps maintain focus
+    on transparency and reproducibility, as it minimizes biases that can arise from
+    data dredging or selective reporting. Clearly articulating your research questions
+    and methods beforehand ensures that your study's integrity and credibility are
+    upheld, fostering greater trust in your findings.
 - id: 43
   title: Make sure all collaborators are on board.
   please: do
@@ -334,6 +553,10 @@ statements:
     - Minimal
     - Registered Report
     - Collaboration
+  details: Ensuring all collaborators are on board with the pre-registration plan
+    helps to avoid potential conflicts and miscommunications later in the research
+    process. It ensures everyone agrees on the research questions, hypotheses, methods,
+    and analysis plans, promoting transparency and accountability from the start.
 - id: 44
   title: Make sure that you want to or need to do a preregistration.
   please: do
@@ -348,6 +571,10 @@ statements:
     - Beginner
     - Days available
     - Weeks available
+  details: Ensuring that you want or need to pre-register your research helps clarify
+    the specific goals and benefits of pre-registration for your study, such as increasing
+    transparency and reducing biases. It also saves time and resources by confirming
+    that pre-registration is the appropriate tool for your research design and objectives.
 - id: 45
   title: 'New: Be clear and transparent about your familiarity with the data'
   please: do
@@ -356,6 +583,10 @@ statements:
     - Good practice
     - Beginner
     - During prereg-prep
+  details: Disclosing your familiarity with the data is crucial to ensure the objectivity
+    and credibility of your pre-registered study. This transparency helps to distinguish
+    between confirmatory and exploratory analyses, minimizing the risk of bias and
+    enhancing the replicability of your findings.
 - id: 46
   title: 'New: Be detailed about the models you will use (included variables, estimators...).'
   please: do
@@ -365,6 +596,11 @@ statements:
     - Quantitative
     - Statistics
     - Minimal
+  details: Being detailed about the models you intend to use, including variables
+    and estimators, is crucial because it prevents hindsight bias and the temptation
+    to data mine for significant results. Clearly specifying these elements upfront
+    enhances the transparency and reproducibility of your study, making it easier
+    for other researchers to follow and verify your analyses.
 - id: 47
   title: 'New: Be detailed about your sample size strategy.'
   please: do
@@ -372,6 +608,11 @@ statements:
   - - During prereg-prep
     - Qualitative
     - Good practice
+  details: Providing a detailed sample size strategy in your pre-registration ensures
+    transparency and reduces the risk of data-driven decisions that may bias the outcomes.
+    It is essential to document how the sample size was determined, including any
+    power analyses or practical constraints, to facilitate replication and demonstrate
+    that the study is adequately powered to detect the anticipated effects.
 - id: 48
   title: 'New: Clearly distinguish between the confirmatory and exploratory parts
     of your research'
@@ -381,6 +622,11 @@ statements:
     - Minimal
     - Conceptual consideration
     - Before prereg
+  details: Clearly distinguishing between the confirmatory and exploratory parts of
+    your research in pre-registration helps maintain transparency and credibility
+    in your methodology and findings. It allows others to differentiate between hypotheses
+    that were pre-specified and tested versus patterns identified post hoc, thus reducing
+    biases and increasing the reliability of reported results.
 - id: 49
   title: 'New: Consider if you think your research is eligible for preregistering
     confirmatory hypotheses (that you don''t know the data too well)'
@@ -390,6 +636,13 @@ statements:
     - Good practice
     - Beginner
     - Before prereg
+  details: Preregistering confirmatory hypotheses is crucial because it ensures that
+    your hypotheses are specified in advance of data collection and analysis, minimizing
+    the risk of data-driven biases or "hypothesizing after the results are known"
+    (HARKing). To determine eligibility, reflect on your familiarity with the dataset
+    and whether any preliminary data analysis could have influenced your hypothesis
+    generation; if you have extensive prior knowledge of the data, preregistering
+    exploratory rather than confirmatory hypotheses might be more appropriate.
 - id: 50
   title: 'New: Consider whether your theory is ready for confirmatory research (or
     whether exploratory research has to be done first)'
@@ -397,6 +650,13 @@ statements:
   tags:
   - - Before prereg
     - Intermediate
+  details: Determining whether your theory is ready for confirmatory research is crucial
+    because pre-registration involves committing to specific hypotheses and methodologies
+    in advance. If your theory is not well-formed, initial exploratory research can
+    help refine hypotheses and methodologies, making your pre-registered study more
+    robust and your findings more reliable. Conducting exploratory research beforehand
+    can prevent ambiguous results and increases the likelihood that confirmatory research
+    will accurately test your hypotheses.
 - id: 51
   title: 'New: Describe all the important specifics of your experiment (e.g., the
     number of groups, between x within, factorial,...)'
@@ -406,6 +666,13 @@ statements:
     - Beginner
     - Minimal
     - During preparation prereg
+  details: Detailing all important specifics of your experiment in the pre-registration
+    ensures that the study's design is transparent and replicable, reducing the risk
+    of post-hoc changes that could bias results. Clearly specifying aspects like the
+    number of groups, whether the design is between-subjects or within-subjects, and
+    any factorial elements helps other researchers understand the exact framework
+    and constraints of your study, enabling them to accurately interpret the findings
+    and replicate the methodology if needed.
 - id: 52
   title: 'New: Describe clearly the manipulated factors with all the levels.'
   please: do
@@ -414,6 +681,11 @@ statements:
     - Beginner
     - Minimal
     - During preparation prereg
+  details: Clearly describing the manipulated factors and their levels in pre-registration
+    establishes transparency and eliminates ambiguity about the experiment's design.
+    This precision allows others to fully understand the planned manipulations and
+    ensures that any deviations from the pre-registered plan are noticeable, thereby
+    bolstering the credibility of the research.
 - id: 53
   title: 'New: Describe how you will hande attrition.'
   please: do
@@ -424,6 +696,12 @@ statements:
     - Quantitative
     - Statistics
     - Minimal
+  details: Describing how you will handle attrition is crucial for maintaining the
+    validity of your study's results, as loss of participants can introduce bias and
+    affect the generalizability of findings. Explicitly outlining strategies such
+    as intention-to-treat analysis or multiple imputation methods assures that reviewers
+    and readers understand how potential data loss will be addressed, thereby enhancing
+    the transparency and credibility of your research.
 - id: 54
   title: 'New: Describe the deviations from the research you replicate and why (?)'
   please: do
@@ -432,11 +710,23 @@ statements:
     - Good practice
     - Conceptual consideration
     - During prereg-prep
+  details: Explaining deviations from the original research in your pre-registration
+    is crucial for transparency and reproducibility. By clearly outlining any changes
+    and the rationale behind them, you help other researchers understand the context
+    and necessity of these modifications, which can influence the interpretation and
+    validity of your findings. This practice also aids in distinguishing between expected
+    variance and methodological alterations, thereby maintaining the integrity of
+    replication efforts.
 - id: 55
   title: 'New: Do consider reflecting on your positionality and describe it.'
   please: do
   tags:
   - Qualitative
+  details: Reflecting on and describing your positionality can highlight potential
+    biases and perspectives that may influence your research process and outcomes.
+    Including this reflection in your pre-registration fosters transparency and allows
+    others to better interpret the study's context and the potential impact of your
+    background on the research findings.
 - id: 56
   title: 'New: Estimate the sample size before data collection.'
   please: do
@@ -444,6 +734,12 @@ statements:
   - - Before prereg
     - Quantitative
     - Statistics
+  details: Estimating the sample size before data collection is crucial in pre-registration
+    as it helps ensure that the study is adequately powered to detect the effects
+    being investigated. This prevents the issues of underpowered studies, which can
+    lead to inconclusive results, and overpowered studies, which can be a waste of
+    resources. To achieve this, researchers should conduct a priori power analysis
+    using expected effect sizes and desired significance levels.
 - id: 57
   title: 'New: Even if you don''t have hypotheses, try to formulate research questions.'
   please: do
@@ -452,6 +748,11 @@ statements:
     - Conceptual consideration
     - Minimal
     - Strictly exploratory
+  details: Even without specific hypotheses, formulating research questions can help
+    outline the focus and direction of your study, which is crucial for setting clear
+    research objectives during pre-registration. This practice allows you to articulate
+    the key inquiries your research aims to address, enhancing transparency and reducing
+    ambiguity in your research process and methodology.
 - id: 58
   title: 'New: If using Bayesian analysis, preregister and justify your priors.'
   please: do
@@ -460,6 +761,12 @@ statements:
     - Statistics
     - Quantitative
     - Before prereg
+  details: Preregistering and justifying priors in Bayesian analysis is crucial to
+    maintain transparency and credibility in your research. It helps prevent data-dependent
+    choices that could bias the results and ensures that the analysis can be appropriately
+    evaluated and replicated by other researchers. Specify the source or reasoning
+    behind your priors and include any relevant prior studies or theoretical considerations
+    to provide a comprehensive rationale.
 - id: 59
   title: 'New: Include all the manipulation checks you plan to conduct in your analysis
     plan'
@@ -469,6 +776,11 @@ statements:
     - Beginner
     - Minimal
     - During preparation prereg
+  details: Including all manipulation checks in your pre-registration ensures transparency
+    and allows others to assess the integrity and validity of your experimental manipulations.
+    Clearly specifying these checks in advance helps avoid potential biases and data
+    dredging, thereby enhancing the credibility and reproducibility of your research
+    findings.
 - id: 60
   title: 'New: Include the measurement invariance (across time) testing in your analysis
     plan and what will you do if the invariance is not supported.'
@@ -480,6 +792,12 @@ statements:
     - Quantitative
     - Statistics
     - Gold standard
+  details: Measurement invariance ensures that the constructs being measured are consistent
+    across different time points, which is crucial for the validity of longitudinal
+    studies. Pre-registering this aspect of your analysis plan provides transparency
+    about how you will handle potential disparities, thus strengthening the credibility
+    of your findings and guarding against accusations of data dredging or post hoc
+    adjustments.
 - id: 61
   title: 'New: Include the reference to the research you are replicating (?)'
   please: do
@@ -488,6 +806,11 @@ statements:
     - Good practice
     - practical step
     - During prereg-prep
+  details: Including the reference to the research you are replicating ensures transparency
+    and allows others to understand the context and motivation for your study. It
+    helps in maintaining scientific rigor by clearly identifying the basis for your
+    hypotheses, methodologies, and expected outcomes, facilitating comparisons and
+    evaluations of the replication's validity.
 - id: 62
   title: 'New: Justify the selection of your statistical models.'
   please: do
@@ -496,6 +819,11 @@ statements:
     - Practical step
     - Statistics
     - Good practice
+  details: Justifying the selection of your statistical models in a pre-registration
+    is crucial to ensure transparency and prevent data fishing. Clearly outlining
+    the rationale behind your chosen models helps safeguard against post-hoc alterations
+    that could bias results, ensuring that your analysis plan is both rigorous and
+    theoretically sound.
 - id: 63
   title: 'New: Justify the use of a specific technique of investigation (EEG, heart
     rate variability, reaction times).'
@@ -504,6 +832,12 @@ statements:
   - - Neuroscience
     - Psychophysiology
     - Before prereg
+  details: Justifying the use of a specific technique in your pre-registration ensures
+    clarity and transparency regarding your methodological choices, which can help
+    in evaluating the appropriateness and rigor of your study. Providing a rationale
+    for the chosen technique also demonstrates that you have critically considered
+    its suitability for addressing your research questions, and that you have accounted
+    for its strengths and limitations in your experimental design.
 - id: 64
   title: 'New: Justify why you''re using a whole brain or a region of interest approach.'
   please: do
@@ -511,6 +845,13 @@ statements:
   - - Before prereg
     - Practical step
     - Neuroscience
+  details: Clearly justifying your choice between a whole brain or region of interest
+    (ROI) approach is crucial for transparency and reproducibility in your research.
+    Pre-registering this decision ensures that the selection is hypothesis-driven
+    rather than data-driven, which helps to avoid biases and increases the credibility
+    of your findings. Additionally, it allows other researchers to critically evaluate
+    and replicate your methodology, strengthening the overall scientific rigor of
+    your study.
 - id: 65
   title: 'New: Keep your preregistered code tidy'
   please: do
@@ -519,6 +860,11 @@ statements:
     - Gold Standard
     - expert
     - During prereg-prep
+  details: Keeping your preregistered code tidy is crucial as it ensures clarity and
+    replicability of your research process, allowing others to easily follow and verify
+    your methods. It should be done by using consistent naming conventions, detailed
+    comments, and organized structure to make each step of the analysis transparent
+    and understandable.
 - id: 66
   title: 'New: Pay attention to both measurement and structural parts of the model.
     (Suggestion: To strike pay attention (too unspecific) and use Specify instead)'
@@ -528,6 +874,11 @@ statements:
     - Model fit
     - Quantitative
     - Statistics
+  details: Specifying both measurement and structural parts of the model in a pre-registration
+    helps ensure clarity and transparency in how variables are defined and how they
+    relate to each other. By clearly outlining these components, it mitigates risks
+    of post-hoc adjustments and enhances the reproducibility and validity of the research
+    findings.
 - id: 67
   title: 'New: Preregister an analysis plan, even if it is a descriptive study'
   please: do
@@ -536,6 +887,11 @@ statements:
     - Minimal
     - Beginner
     - Before prereg
+  details: Preregistering an analysis plan ensures transparency and prevents data-driven
+    decisions that could compromise the validity of the results. Even in descriptive
+    studies, a pre-registered plan helps to delineate clear expectations about the
+    data analysis, avoiding the temptation to post hoc adjustments, thus maintaining
+    the integrity and reproducibility of the research.
 - id: 68
   title: 'New: Preregister your code if you have it.'
   please: do
@@ -544,6 +900,10 @@ statements:
     - Gold Standard
     - Expert
     - Scriptable
+  details: Pre-registering your code ensures transparency and reproducibility, allowing
+    others to understand and replicate your analyses exactly as planned. By doing
+    so, you guard against data mining and post hoc analyses that could invalidate
+    your findings, thereby enhancing the credibility of your results.
 - id: 69
   title: 'New: Preregister your exclusion criteria'
   please: do
@@ -554,6 +914,11 @@ statements:
     - Beginner
     - During prereg-prep
     - Conceptual consideration
+  details: Preregistering your exclusion criteria helps prevent bias and increases
+    the transparency and reproducibility of your study. Clearly specifying these criteria
+    before collecting data ensures that decisions about excluding data are not made
+    based on the data itself, which can inadvertently lead to cherry-picking results
+    that fit preconceived hypotheses.
 - id: 70
   title: 'New: Preregister your search strategy (e.g., key words, strings)'
   please: do
@@ -564,6 +929,11 @@ statements:
     - Beginner
     - During prereg-prep
     - Conceptual consideration
+  details: Preregistering your search strategy ensures that the process of identifying
+    relevant literature or data is transparent and replicable, helping to reduce confirmation
+    bias. This should be done by explicitly detailing the key words, search strings,
+    and databases you intend to use, allowing others to follow the same protocol and
+    assess the comprehensiveness of your search.
 - id: 71
   title: 'New: Preregister!'
   please: do
@@ -572,6 +942,11 @@ statements:
     - Minimal
     - beginner
     - Before prereg
+  details: Pre-registering your research helps to prevent data dredging and hypothesizing
+    after results are known (HARKing), which can lead to inflated false positive rates
+    and questionable research practices. By clearly documenting your hypotheses, methodology,
+    and analysis plan before collecting data, you enhance the transparency and credibility
+    of your research, making it easier for others to reproduce and validate your findings.
 - id: 72
   title: 'New: Report deviations from your preregistration in a clear and well-arranged
     manner (e.g., separate section in the methods part or in a table).'
@@ -582,6 +957,13 @@ statements:
     - During data collection
     - Post data collection
     - Deviation
+  details: Reporting deviations from your preregistration is crucial for maintaining
+    transparency and credibility in your research. It allows other researchers to
+    understand how and why the study veered from its original plan, facilitating more
+    accurate interpretation and replication of findings. Documenting these deviations
+    in a clear and organized manner, such as in a separate section or table, ensures
+    that readers can easily find and evaluate the impacts of these changes on the
+    study's outcomes.
 - id: 73
   title: 'New: Share the experimental stimuli with your prereg.'
   please: do
@@ -590,6 +972,11 @@ statements:
     - Intermediate
     - Gold Standard
     - Practical step
+  details: Sharing the experimental stimuli with your preregistration enhances transparency
+    and allows others to scrutinize the exact materials used, ensuring the reproducibility
+    of your research. Providing detailed stimuli helps clarify how they were selected
+    and tailored to test your hypotheses, preventing potential biases or ambiguities
+    in interpretation later on.
 - id: 74
   title: 'New: Sharing is caring: don''t forget your data dictionary and notebook
     code.'
@@ -597,6 +984,11 @@ statements:
   tags:
   - - During prereg-prep
     - Quantitative
+  details: Providing a data dictionary and notebook code upon pre-registration enhances
+    transparency and reproducibility of your study, making it easier for other researchers
+    to understand and replicate your work. It ensures that all variables, their definitions,
+    and the steps of your analysis are clearly documented, reducing the risk of misinterpretation
+    and facilitating more rigorous scrutiny and validation of your findings.
 - id: 75
   title: 'New: Specifiy how you will evaluate the effect''s magnitude, do not rely
     solely on p-values.'
@@ -607,6 +999,11 @@ statements:
     - Quantitative
     - Statistics
     - Gold standard
+  details: Evaluating the effect's magnitude provides a clearer understanding of the
+    practical significance of your findings, beyond mere statistical significance
+    offered by p-values. To achieve this, pre-register specific metrics like effect
+    sizes or confidence intervals, detailing how they will be calculated and interpreted
+    in relation to your hypotheses.
 - id: 76
   title: 'New: Specify how you will treat influential cases.'
   please: do
@@ -616,6 +1013,11 @@ statements:
     - Psychometrics
     - Statistics
     - Good practice
+  details: Pre-specifying how influential cases will be treated ensures transparency
+    and prevents cherry-picking of data that could bias the results. This plan should
+    include criteria for identifying these cases and a clear outline of the steps
+    to handle them, such as exclusion or using robust statistical techniques, to maintain
+    the integrity of the pre-registered analysis.
 - id: 77
   title: 'New: Specify how you will treat missing data.'
   please: do
@@ -628,6 +1030,10 @@ statements:
     - Conceptual consideration
     - Good practice
     - Clinical trial
+  details: Clearly specifying how you will treat missing data in your pre-registration
+    helps ensure transparency and reduces the risk of introducing bias into your analyses.
+    It establishes a consistent approach that can be evaluated and replicated by others,
+    enhancing the credibility of your findings and minimizing selective reporting.
 - id: 78
   title: 'New: Specify how you will treat outliers.'
   please: do
@@ -637,6 +1043,10 @@ statements:
     - Psychometrics
     - Statistics
     - Good practice
+  details: Clearly defining how you will handle outliers in your pre-registration
+    helps to prevent any post hoc decisions that could bias your results. Pre-specifying
+    these rules ensures that your approach to outliers is consistent and transparent,
+    thus enhancing the credibility and reproducibility of your research findings.
 - id: 79
   title: 'New: Specify sensitivity parameters for network models (like thresholds
     or hyperparameters).'
@@ -645,6 +1055,11 @@ statements:
   - - Before prereg
     - Networks
     - Statistics
+  details: Specifying sensitivity parameters for network models in pre-registration
+    helps establish clear criteria for data analysis, reducing the risk of post hoc
+    adjustments that could bias results. To do this, clearly define all thresholds
+    or hyperparameters that will be used in the models and justify their selection
+    based on either theoretical grounding or empirical evidence.
 - id: 80
   title: 'New: Specify the alpha level correction you will use.'
   please: do
@@ -654,6 +1069,11 @@ statements:
     - Neuroscience
     - Statistics
     - Minimal
+  details: Specifying the alpha level correction in your pre-registration is crucial
+    for ensuring that your statistical tests control for the likelihood of Type I
+    errors, especially when conducting multiple comparisons. By detailing this in
+    advance, you enhance the transparency and rigor of your research, making it easier
+    for others to understand and replicate your analytical choices.
 - id: 81
   title: 'New: Specify the estimator.'
   please: do
@@ -663,6 +1083,11 @@ statements:
     - Factor analysis
     - Quantitative
     - Statistics
+  details: Specifying the estimator is crucial in pre-registration as it clarifies
+    the statistical techniques that will be used to analyze the data, reducing the
+    risk of p-hacking and enhancing the rigor and reproducibility of the study. Clearly
+    stating the estimator helps ensure that the analysis plan is transparent and can
+    be accurately followed, validated, and critiqued by others.
 - id: 82
   title: 'New: Specify the inference criteria (e.g., smallest effect size of interest,
     statistical significance level).'
@@ -673,6 +1098,11 @@ statements:
     - Quantitative
     - Statistics
     - Good practice
+  details: Specifying the inference criteria in pre-registration helps ensure transparency
+    and consistency in how results will be evaluated, reducing the potential for bias
+    or data dredging. Clearly defining parameters like the smallest effect size of
+    interest and the statistical significance level in advance guides the analysis,
+    making it easier to interpret findings and compare them across studies.
 - id: 83
   title: 'New: Specify which of your constructs are reflective or formative.'
   please: do
@@ -680,6 +1110,13 @@ statements:
   - - SEM
     - Model fit
     - Statistics
+  details: Specifying whether your constructs are reflective or formative is crucial
+    in pre-registration because it dictates how measures are to be developed and validated,
+    influencing the theoretical and practical implications of your findings. Reflective
+    constructs assume that indicators are manifestations of the underlying construct,
+    while formative constructs suggest that indicators form or cause the construct;
+    this distinction guides the selection of appropriate statistical models and analytical
+    techniques.
 - id: 84
   title: 'New: Specify your nomological network.'
   please: do
@@ -689,6 +1126,12 @@ statements:
     - Measure development
     - Before prereg
     - Quantitative
+  details: Specifying your nomological network is crucial for clarifying the theoretical
+    context and relationships between the constructs you are studying, which enhances
+    the interpretability and credibility of your research. By detailing the anticipated
+    associations and theoretical underpinnings, you provide a solid framework that
+    guides hypothesis generation and analysis plans, minimizing the risk of post hoc
+    rationalizations.
 - id: 85
   title: 'New: State the nature of your replication study (direct x conceptual)'
   please: do
@@ -697,6 +1140,12 @@ statements:
     - Good practice
     - conceptual consideration
     - During prereg-prep
+  details: Clearly articulating whether your replication study is direct or conceptual
+    is crucial because it defines the intended level of methodological similarity
+    to the original study. This transparency helps others understand the extent to
+    which findings should be expected to generalize and allows for better assessment
+    of the robustness and reliability of the original findings and your replication
+    effort.
 - id: 86
   title: 'New: When you can, prefer open toolboxes for stimuli presentation and data
     analysis.'
@@ -704,6 +1153,12 @@ statements:
   tags:
   - - Conceptual consideration
     - Neuroscience
+  details: Using open toolboxes for stimuli presentation and data analysis enhances
+    the transparency and reproducibility of your research. Open tools allow other
+    researchers to verify and replicate your methods exactly as outlined in your pre-registration,
+    thereby increasing the credibility and trustworthiness of your findings. Additionally,
+    these tools often benefit from community support, which can help resolve issues
+    and improve the software over time.
 - id: 87
   title: 'New: You can also preregister exploratory studies, describing competing
     theories/hypotheses.'
@@ -712,6 +1167,12 @@ statements:
   - - Before prereg
     - Conceptual consideration
     - Strictly exploratory
+  details: Preregistering exploratory studies allows researchers to transparently
+    acknowledge their initial uncertainties and set clear expectations regarding multiple
+    potential outcomes based on competing theories or hypotheses. This practice enhances
+    the credibility of the research by making the scope and direction of exploratory
+    analysis explicit, reducing the risk of hindsight bias and increasing the integrity
+    of the scientific process.
 - id: 88
   title: 'New: You can do the preregistration even after the data collection'
   please: do
@@ -723,6 +1184,10 @@ statements:
     - Beginner
     - Intermediate
     - Secondary data
+  details: Pre-registering after data collection but before analysis helps combat
+    bias by clearly distinguishing between exploratory and confirmatory research.
+    This step ensures that hypotheses and analysis plans are documented and time-stamped,
+    preserving transparency and reducing the risk of p-hacking or data dredging.
 - id: 89
   title: Preregister as early as possible, preferably before data collection starts/
     before data is made accessible to researchers.
@@ -731,6 +1196,12 @@ statements:
   - - During prereg-prep
     - Conceptual consideration
     - Show always
+  details: Pre-registering at the earliest stages, ideally before any data is collected
+    or accessed, ensures the integrity and transparency of the research process by
+    clearly delineating hypotheses, methods, and analyses upfront. This timing helps
+    to prevent any unintentional or intentional data-driven adjustments that could
+    compromise the validity of the findings, thereby strengthening the credibility
+    and reproducibility of the results.
 - id: 90
   title: Record, report and justify all deviations from your preregistration.
   please: do
@@ -741,12 +1212,24 @@ statements:
     - During data collection
     - Post data collection
     - Deviation
+  details: Recording, reporting, and justifying all deviations from your preregistration
+    is essential to maintain transparency and credibility in your research. It allows
+    others to accurately interpret the findings, assessing whether any deviations
+    might have affected the results, and ensures that the pre-registration serves
+    its purpose of reducing bias and increasing reproducibility. By thoroughly documenting
+    deviations, you demonstrate a commitment to scientific integrity and provide valuable
+    context for future researchers.
 - id: 91
   title: Rev...
   please: .na.character
   tags:
   - - Expert
     - Gold standard
+  details: Reviewing existing literature is crucial before pre-registering your research
+    as it helps you identify gaps, refine your hypotheses, and justify the significance
+    of your study. By synthesizing previous findings, you can better design your study
+    and ensure that your registered protocol will address relevant and novel questions
+    in the field.
 - id: 92
   title: 'Rev2: Be clear about what you do not know and clearly explain your uncertainties.'
   please: do
@@ -756,6 +1239,11 @@ statements:
     - Intermediate
     - Good practice
     - Research clarity
+  details: Pre-registering your research with explicit acknowledgment of uncertainties
+    helps to maintain transparency and intellectual honesty. It allows for a more
+    accurate assessment of the findings and aids in distinguishing between genuine
+    discoveries and possible artifacts of the research process, thereby strengthening
+    the credibility of your study.
 - id: 93
   title: 'Rev2: Disclose where you expect to be flexible and consider making a decision
     tree to make your choices tranparent.'
@@ -765,6 +1253,11 @@ statements:
     - Conceptual consideration
     - Intermediate
     - Good standard
+  details: Pre-registering where you might be flexible and using a decision tree helps
+    clarify in advance how you will handle unexpected issues or necessary deviations
+    from the original plan. This transparency enhances the credibility of your research
+    by reducing potential biases that can arise from post-hoc adjustments, ensuring
+    that your study's integrity is maintained throughout the research process.
 - id: 94
   title: 'Rev: Be clear when specifying your research (e.g., hypotheses, sample size
     rationale etc.) in the preregistration.'
@@ -775,6 +1268,12 @@ statements:
     - Beginner
     - Minimal
     - Research clarity
+  details: Clarity in specifying your research components in the preregistration is
+    crucial because it allows for transparency and replicability. Detailed hypotheses
+    and sample size rationale ensure that peers can accurately understand and evaluate
+    your study design and intentions, reducing bias and enhancing the credibility
+    of your findings. To achieve this, use precise language and provide thorough justifications
+    for each element you include.
 - id: 95
   title: 'Rev: Browse through the available preregistration formats to see what works
     best for you.'
@@ -784,6 +1283,14 @@ statements:
     - Pre data collection
     - Novice
     - Format selection
+  details: Pre-registering your research involves detailing your study's methods and
+    hypotheses in advance, and selecting the appropriate format can significantly
+    enhance clarity and comprehensiveness. Different formats, such as the Open Science
+    Framework or AsPredicted, offer various levels of detail and structure, so exploring
+    these options will help you choose one that aligns with your specific research
+    needs and goals. This initial effort ensures that you adhere to the most suitable
+    template, preventing future modifications that could undermine the credibility
+    of your preregistration.
 - id: 96
   title: 'Rev: Clarify for yourself what purpose the preregistration serves in your
     research.'
@@ -794,6 +1301,10 @@ statements:
     - Beginner
     - Minimal
     - Research clarity
+  details: Understanding the purpose of preregistration helps ensure that it addresses
+    key aspects like hypothesis confirmation, reducing bias, and enhancing transparency.
+    It can guide you in detailing your methodology and analysis plan, thereby fortifying
+    the credibility and reproducibility of your findings.
 - id: 97
   title: 'Rev: Clearly explain the uncertainties and alternative approach (decision
     tree (?))'
@@ -802,6 +1313,12 @@ statements:
   - - Intermediate/Expert
     - Good standard
     - Gold standard
+  details: Clearly explaining uncertainties and alternative approaches in your pre-registration
+    helps to manage expectations and ensures transparency in how unforeseen challenges
+    will be handled. Providing a decision tree can offer a structured plan for different
+    contingencies, lending credibility to your research process and making it easier
+    for fellow scientists and reviewers to understand the rationale behind methodological
+    choices.
 - id: 98
   title: 'Rev: Do not plan steps you already know you cannot do. (Rephrasing suggestion:
     Do not plan steps that you know are not feasible.)'
@@ -812,18 +1329,34 @@ statements:
     - Hours available
     - Good practice
     - Beginner
+  details: Pre-registration should reflect a realistic and executable research plan
+    to ensure integrity and credibility. Planning infeasible steps creates a risk
+    of deviating from the pre-registered protocol, which can undermine the validity
+    of the pre-registration and complicate later justifications for any changes made.
+    A realistic plan helps maintain transparency and trust in the research process.
 - id: 99
   title: 'Rev: Don''t beat yourself up for not doing everything perfectly or in a
     way you would ideally want to'
   please: don't
   tags:
   - Beginner
+  details: Pre-registration aims to increase the transparency and credibility of research,
+    but it is still a relatively new process for many scientists. Imperfections are
+    a normal part of learning and adapting to new practices, and the key is to iterate
+    and improve over time. Embracing these incremental improvements helps foster a
+    culture of continuous improvement without overwhelming researchers with unrealistic
+    expectations.
 - id: 100
   title: 'Rev: Make decision trees (?)'
   please: do
   tags:
   - - Intermediate
     - Good standard
+  details: Creating decision trees is essential for pre-registration as it outlines
+    the specific steps and criteria for different phases of the experiment, ensuring
+    clarity and consistency. By detailing potential decision points and their outcomes,
+    researchers can transparently document how they intend to handle various scenarios,
+    reducing ambiguity and enhancing the reproducibility of their study.
 - id: 101
   title: 'Rev: Provide all the relevant information and describe everything clearly
     for the future collaborators/reviewers/replicators.'
@@ -835,6 +1368,12 @@ statements:
     - Good practice
     - Collaboration
     - Research clarity
+  details: Clear and comprehensive information is crucial in pre-registration as it
+    allows future collaborators, reviewers, and replicators to understand the methodology,
+    rationale, and intended analyses, ensuring transparency and reproducibility. By
+    specifying all details—such as hypotheses, sample size, procedures, and data analysis
+    plans—you minimize ambiguities and prevent retrospective alterations, thereby
+    enhancing the credibility and integrity of the research.
 - id: 102
   title: 'Rev: Specify how you will evaluate model fit.'
   please: do
@@ -846,6 +1385,12 @@ statements:
     - Intermediate
     - Quantitative
     - Statistics
+  details: Specifying how you will evaluate model fit in your pre-registration is
+    crucial for ensuring transparency and reproducibility in your research. By detailing
+    the exact criteria and metrics, such as AIC, BIC, or RMSEA, you minimize the risk
+    of biased post-hoc adjustments and provide a clear framework for others to understand
+    and replicate your results. This level of detail also helps in safeguarding against
+    'p-hacking' and reinforces the trustworthiness of your findings.
 - id: 103
   title: Set aside time for your collaborators to have a look at it, provide feedback,
     and agree on it upon submission.
@@ -856,6 +1401,12 @@ statements:
     - Weeks available
     - Registered Report
     - Collaboration
+  details: Collaborators can offer valuable perspectives that help refine and clarify
+    the pre-registered plan, making it more robust and comprehensive. Ensuring all
+    collaborators agree on the pre-registration fosters transparency and collective
+    ownership of the research process, which is crucial for adherence to the planned
+    methodology and for addressing potential future disputes about data interpretation
+    or deviations.
 - id: 104
   title: Specify model fit cut offs? (maybe using the McNeish-Wolfe technique?)
   please: do
@@ -866,6 +1417,12 @@ statements:
     - Before prereg
     - Intermediate
     - Expert
+  details: Specifying model fit cutoffs in your pre-registration is crucial because
+    it sets clear, a priori standards for evaluating the adequacy of your model. This
+    transparency helps prevent post-hoc justifications and increases the credibility
+    of your findings. Using techniques like the McNeish-Wolfe approach provides a
+    robust framework for establishing these cutoffs based on empirical data, ensuring
+    that your criteria are well-supported and scientifically valid.
 - id: 105
   title: Specify which software versions you are going to use and how you are making
     this reproducible (e.g., using the R groundhog package, CodeOcean).
@@ -877,6 +1434,11 @@ statements:
     - Open Software
     - Intermediate
     - Expert
+  details: Specifying software versions ensures that the computational environment
+    can be precisely replicated, which is crucial for the reproducibility of results.
+    By using tools like the R groundhog package or CodeOcean, researchers can document
+    and share the exact versions of software and packages employed, minimizing discrepancies
+    and making it easier for others to verify findings.
 - id: 106
   title: 'Suggested Revision for previous: Consider the possibility that your resarch
     might not be suitable for preregistering confirmatory hypotheses (e.g. if you
@@ -887,6 +1449,12 @@ statements:
     - Good practice
     - Beginner
     - Before prereg
+  details: Pre-registering confirmatory hypotheses assumes that researchers are making
+    predictions without advanced insight into the data. If you are already familiar
+    with the dataset, it can compromise the objectivity and validity of the pre-registration,
+    reducing its credibility. In such cases, consider pre-registering exploratory
+    analyses instead, or acknowledge the potential bias and detail the sources of
+    your prior knowledge within the pre-registration.
 - id: 107
   title: Take a look at a few examples before you start.
   please: do
@@ -898,6 +1466,10 @@ statements:
     - Days available
     - Weeks available
     - Format selection
+  details: Reviewing examples of pre-registered research can help you understand the
+    structure, detail, and types of information commonly included. This ensures clarity
+    and completeness in your own pre-registration, making it more likely to be useful
+    and accepted by the scientific community.
 - id: 108
   title: Think of it as a tool that helps you think through the steps of your research
     before actually conducting it, so you're not forced to wing it later.
@@ -907,6 +1479,12 @@ statements:
     - Conceptual consideration
     - Novice
     - Pre data collection
+  details: Pre-registration compels researchers to carefully plan and document their
+    study design, hypotheses, and analysis methods in advance, reducing the risk of
+    data-driven decisions that could compromise the validity of the results. By doing
+    so, it not only enhances the transparency of the research process but also strengthens
+    the integrity and reliability of the findings, as every step is premeditated rather
+    than decided ad hoc.
 - id: 109
   title: Try your best to reduce your researcher degrees of freedom.
   please: do
@@ -915,6 +1493,11 @@ statements:
     - Conceptual consideration
     - Show always
     - Minimal
+  details: Reducing researcher degrees of freedom is crucial in pre-registration because
+    it minimizes the potential for data-driven decisions that can lead to biased outcomes.
+    This can be done by clearly specifying hypotheses, analysis plans, and data collection
+    methods in advance, ensuring that the research follows a predetermined path rather
+    than being influenced by the data as it is analyzed.
 - id: 110
   title: Understand the implications of the complexity of your design. (example may
     be needed here)
@@ -922,6 +1505,16 @@ statements:
   tags:
   - - During prereg-prep
     - Conceptual consideration
+  details: Understanding the complexity of your design is crucial for a precise pre-registration
+    that can accurately inform your data analysis plan. Complex designs, such as longitudinal
+    studies or multi-factorial experiments, often require detailed specifications
+    of interactions and multiple variables, which can lead to an increased risk of
+    ambiguous hypotheses and analytical flexibility. Being clear about the complexities
+    involved helps ensure that your pre-registration is comprehensive and specific,
+    minimizing subjective decision-making that can bias the results. For example,
+    pre-registering a multi-condition experiment will necessitate detailed descriptions
+    of each condition, the relationships between them, and your specific analysis
+    plan for each possible outcome.
 - id: 111
   title: Update or submit a new preregistration when substantive changes need to be
     made.
@@ -931,6 +1524,11 @@ statements:
     - Gold Standard
     - Novice
     - Beginner
+  details: Updating or submitting a new preregistration when substantive changes occur
+    ensures transparency and accountability in the research process. This practice
+    helps to avoid the appearance of 'p-hacking' or data fishing by documenting any
+    shifts in methodology or analysis before examining outcomes, thereby maintaining
+    the integrity and credibility of the research.
 - id: 112
   title: Use consistent terminology between preregistration and manuscript as it makes
     it easier to compare these later on.
@@ -941,12 +1539,22 @@ statements:
     - Intermediate
     - Gold standard
     - Registered Report
+  details: Using consistent terminology between preregistration and the manuscript
+    ensures clarity and traceability, facilitating the comparison of intended versus
+    actual research procedures. This consistency helps reviewers and readers assess
+    the fidelity to the pre-registered plan and enhances the transparency and reproducibility
+    of the research findings.
 - id: 113
   title: View yourself as a future replicator/collaborator/reviewer.
   please: do
   tags:
   - - During prereg-prep
     - Conceptual consideration
+  details: Adopting the perspective of a future replicator, collaborator, or reviewer
+    encourages you to be meticulous and transparent in your pre-registration documentation.
+    This mindset ensures that the details are comprehensive and clear, making it easier
+    for others (and yourself) to understand, evaluate, and recreate the study, thus
+    enhancing the credibility and reliability of your research findings.
 - id: 114
   title: When you do not have much time, set the following priorities.
   please: do
@@ -956,6 +1564,12 @@ statements:
     - Hours available
     - Bullet points
     - Time Management
+  details: In time-constrained situations, prioritizing key aspects of pre-registration
+    such as specifying hypotheses, key variables, and primary analyses ensures that
+    even brief pre-registrations can protect against questionable research practices.
+    This focused approach allows for transparency and accountability, which are the
+    core purposes of pre-registration, even when comprehensive documentation is not
+    feasible.
 resources:
 - id: 1
   title: 'Alpha justification Daniel Lakens shiny app: https://shiny.ieis.tue.nl/JustifyAlpha/
@@ -984,13 +1598,6 @@ resources:
   - Qualitative
   doi: 10.1111/spc3.12728
 - id: 5
-  title: COS Preregistration Challenge Template (OSF) (https://osf.io/jea94/)
-  tags:
-  - - Days
-    - Gold standard
-    - Pre data collection
-  doi: .na.character
-- id: 6
   title: 'Claesen, A., Gomes, S., Tuerlinckx, F., & Vanpaemel, W. (2021). Comparing
     dream to reality: an assessment of adherence of the first generation of preregistered
     studies. Royal Society Open Science, 8(10), 211037. https://doi.org/10.1098/rsos.211037'
@@ -998,14 +1605,14 @@ resources:
   - - Deviations
     - More info
   doi: 10.1098/rsos.211037
-- id: 7
+- id: 6
   title: Deviation_checklist_PRP_QUANT.xlsx. (ZPID). Google Docs. Retrieved July 9,
     2023, from https://docs.google.com/spreadsheets/d/1lbUj_8C0gob63wv_6QLsQunmzNh9Ig3L/edit?usp=sharing&ouid=114975032714742083647&rtpof=true&sd=true
   tags:
   - - Deviations
     - Post data collection
   doi: .na.character
-- id: 8
+- id: 7
   title: EEG ERP preregistration template (https://osf.io/preprints/metaarxiv/4nvpt/)
   tags:
   - - Days
@@ -1013,24 +1620,40 @@ resources:
     - Good practice
     - Pre data collection
   doi: .na.character
-- id: 9
+- id: 8
   title: Ferguson et al. (2023). Survey of open science practices and attitudes in
     the social sciences. https://doi.org/10.1038/s41467-023-41111-1
   tags:
   - More info
   doi: 10.1038/s41467-023-41111-1
-- id: 10
+- id: 9
   title: For clinical trials (might be relevant for psychology too) https://clinicaltrials.gov/
   tags:
   - Clinical trial
   doi: .na.character
+- id: 10
+  title: 'Gdoc: https://docs.google.com/document/d/1fU-EY36gId9FWHsP4-lE2SF9IVCFBMKUzBJmHD9bBYQ/edit?usp=sharing'
+  tags:
+  - - Days
+    - Gold standard
+    - Pre data collection
+    - Systematic review
+  doi: .na.character
 - id: 11
+  title: 'Google doc: https://docs.google.com/document/d/1gkN0Jp6Gu7GIA4Ne4YCDZ61nCLQRgt32moRdUg9AnVg/edit?usp=sharing
+    ; R Markdown as package: https://github.com/crsh/prereg ; R Markdown: https://github.com/BartlettJE/BartlettJE.github.io/blob/master/RMarkdown-scripts/OSF%20preregistration%20template.Rmd'
+  tags:
+  - - Days
+    - Gold standard
+    - Pre data collection
+  doi: .na.character
+- id: 12
   title: Hardwicke & Wagenmakers. (2023). Reducing bias, increasing transparency and
     calibrating confidence with preregistration. https://doi.org/10.1038/s41562-022-01497-2
   tags:
   - More info
   doi: 10.1038/s41562-022-01497-2
-- id: 12
+- id: 13
   title: 'Heirene, R., LaPlante, D., Louderback, E. R., Keen, B., Bakker, M., Serafimovska,
     A., & Gainsbury, S. M. (2021). Preregistration specificity & adherence: A review
     of preregistered gambling studies & cross-disciplinary comparison. In PsyArXiv.
@@ -1039,7 +1662,7 @@ resources:
   - - Deviations
     - More info
   doi: 10.31234/osf.io/nj4es
-- id: 13
+- id: 14
   title: 'Kathawalla, U.-K., Silverstein, P., & Syed, M. (2021). Easing into open
     science: A guide for graduate students and their advisors. Collabra. Psychology,
     7(1). https://doi.org/10.1525/collabra.18684'
@@ -1047,13 +1670,19 @@ resources:
   - - Beginner
     - PhD
   doi: 10.1525/collabra.18684
-- id: 14
+- id: 15
   title: 'Lakens, D. (2019). The value of preregistration for psychological science:
     A conceptual analysis. https://www.jstage.jst.go.jp/article/sjpr/62/3/62_221/_pdf'
   tags:
   - More info
   doi: .na.character
-- id: 15
+- id: 16
+  title: Lakens, D. (2023, December 18). When and How to Deviate from a Preregistration.
+    https://doi.org/10.31234/osf.io/ha29k
+  tags:
+  - Deviations
+  doi: 10.31234/osf.io/ha29k
+- id: 17
   title: 'Logg, J. M., & Dorison, C. A. (2021). preregistration: Weighing costs and
     benefits for researchers. Organizational Behavior and Human Decision Processes,
     167, 18–27. https://doi.org/10.1016/j.obhdp.2021.05.006'
@@ -1061,7 +1690,7 @@ resources:
   - - More info
     - Bullet points
   doi: 10.1016/j.obhdp.2021.05.006
-- id: 16
+- id: 18
   title: PRISMA-P (http://prisma-statement.org/Extensions/Protocols)
   tags:
   - - Days
@@ -1070,7 +1699,7 @@ resources:
     - Pre data collection
     - Post data collection
   doi: .na.character
-- id: 17
+- id: 19
   title: PROSPERO
   tags:
   - - Weeks
@@ -1079,33 +1708,33 @@ resources:
     - Gold Standard
     - Pre data collection
   doi: .na.character
-- id: 18
+- id: 20
   title: 'Peikert, A. (2021) Reproducible Research in R: A Tutorial on How to Do the
     Same Thing More Than Once. https://doi.org/10.3390/psych3040053'
   tags:
   - Scriptable
   doi: 10.3390/psych3040053
-- id: 19
+- id: 21
   title: 'Planned comparison by Umberto Granziol apRiori shiny app: https://cran.r-project.org/web/packages/appRiori/index.html'
   tags:
   - - Pre data collection
     - Power analysis
   doi: .na.character
-- id: 20
+- id: 22
   title: 'Prereg package - Provides a collection of templates to author preregistration
     documents for scientific studies in PDF format:  https://cran.r-project.org/web/packages/prereg/index.html'
   tags:
   - - Scriptable
     - Open Software
   doi: .na.character
-- id: 21
+- id: 23
   title: 'Preregistration Planning and Deviation Documentation: Challenges, implications,
     and suggested template. (n.d.). Google Docs. Retrieved July 9, 2023, from https://docs.google.com/document/d/1WKb2HAoSmgUndzcI1DDYuGyUpLFwcmuSn5OAIlI32KI/edit?pli=1'
   tags:
   - - Deviations
     - Post data collection
   doi: .na.character
-- id: 22
+- id: 24
   title: Preregistration of Qualitative Research (Haven et al., 2020) (https://doi.org/10.1080/08989621.2019.1580147)
   tags:
   - - Days
@@ -1113,12 +1742,12 @@ resources:
     - Good practice
     - Pre data collection
   doi: 10.1080/08989621.2019.1580147)
-- id: 23
+- id: 25
   title: 'Prospective and retrospective Design Analysis R package: https://cran.r-project.org/web/packages/PRDA/index.html'
   tags:
   - Power analysis
   doi: .na.character
-- id: 24
+- id: 26
   title: "Psychological Research Preregistration-Quantitative (aka PRP-QUANT):\n-
     https://prereg-psych.org/index.php/rrp/templates\n- http://dx.doi.org/10.23668/psycharchives.4584
     \n- R Markdown (https://github.com/crsh/prereg)"
@@ -1126,8 +1755,9 @@ resources:
   - - Days
     - Gold standard
     - Pre data collection
+    - Quantitative
   doi: 10.23668/psycharchives.4584
-- id: 25
+- id: 27
   title: Registered Report Protocol Preregistration (https://osf.io/93znh/)
   tags:
   - - Days
@@ -1135,27 +1765,38 @@ resources:
     - Good practice
     - Pre data collection
   doi: .na.character
-- id: 26
-  title: Replication recipe (Brandt et al., 2013) (https://www.sciencedirect.com/science/article/pii/S0022103113001819)
+- id: 28
+  title: 'Replication recipe (Brandt et al., 2013) (https://www.sciencedirect.com/science/article/pii/S0022103113001819)
+    ; Post-completion: gdoc: https://docs.google.com/document/d/1Sm1I0VhhW-rDTdIVa5sRB2HYQlWO0Sh5jJm15gvqgVo/edit?usp=sharing
+    ; word: https://osf.io/9rp6j/'
+  tags:
+  - - Days
+    - Good practice
+    - Post data collection
+  doi: .na.character
+- id: 29
+  title: 'Replication recipe (Brandt et al., 2013) (https://www.sciencedirect.com/science/article/pii/S0022103113001819)
+    ; Registration: gdoc: https://docs.google.com/document/d/1alPrRwktf_JlAAxQfTKl7qH3EUPGNb1gB5VwGYdcgc0/edit?usp=sharing
+    ; word: https://osf.io/4jd46/'
   tags:
   - - Days
     - Good practice
     - Pre data collection
   doi: .na.character
-- id: 27
+- id: 30
   title: 'Reporting deviations from preregistration: https://osf.io/xv5rp/'
   tags:
   - - Deviations
     - Post data collection
   doi: .na.character
-- id: 28
+- id: 31
   title: 'Sample size justification Daniel Lakens shiny app: https://shiny.ieis.tue.nl/sample_size_justification/'
   tags:
   - - Pre data collection
     - Power analysis
     - Days
   doi: .na.character
-- id: 29
+- id: 32
   title: Scoping review preregistration (https://doi.org/10.23668/psycharchives.5631)
   tags:
   - - Days
@@ -1163,29 +1804,22 @@ resources:
     - Good practice
     - Pre data collection
   doi: 10.23668/psycharchives.5631)
-- id: 30
-  title: Secondary Data Preregistration (van den Akker et al., 2021) (https://doi.org/10.15626/MP.2020.2625)
-  tags:
-  - - Days
-    - Secondary data
-    - Good practice
-    - Pre data collection
-  doi: 10.15626/MP.2020.2625)
-- id: 31
-  title: Secondary Data Preregistration template on Open Science Framework (https://docs.google.com/document/d/1p6UE2b0D0ON4XEccOCOU1pdaCTiyGLOfP-g-8Ayxylk/edit?usp=sharing)
+- id: 33
+  title: 'Secondary Data Preregistration template on Open Science Framework https://docs.google.com/document/d/1p6UE2b0D0ON4XEccOCOU1pdaCTiyGLOfP-g-8Ayxylk/edit?usp=sharing  ;
+    Article: van den Akker et al., 2021 https://doi.org/10.15626/MP.2020.2625'
   tags:
   - - Days
     - Secondary data
     - Good practice
     - Post data collection
-  doi: .na.character
-- id: 32
+  doi: 10.15626/MP.2020.2625
+- id: 34
   title: 'Simmons, J., Nelson, L., & Simonsohn, U. (2021). Pre‐registration: Why and
     how. Journal of Consumer Psychology, 31(1), 151–162. https://doi.org/10.1002/jcpy.1208'
   tags:
   - Gold standard
   doi: 10.1002/jcpy.1208
-- id: 33
+- id: 35
   title: 'Simulation Studies for Methodological Research in Psychology: A Standardized
     Template for Planning, Preregistration, and Reporting'
   tags:
@@ -1194,20 +1828,20 @@ resources:
     - Good practice
     - Pre data collection
   doi: .na.character
-- id: 34
+- id: 36
   title: 'Spitzer L, Mueller S (2023) Registered report: Survey on attitudes and experiences
     regarding preregistration in psychological research. PLoS ONE 18(3): e0281086.
     https://doi.org/10.1371/journal.pone.0281086'
   tags:
   - More info
   doi: 10.1371/journal.pone.0281086
-- id: 35
+- id: 37
   title: 'Toth et al. (2020). Study Preregistration: An Evaluation of a Method for
     Transparent Reporting. https://doi.org/10.1007/s10869-020-09695-3'
   tags:
   - More info
   doi: 10.1007/s10869-020-09695-3
-- id: 36
+- id: 38
   title: 'Van den Akker, O., Bakker, M., van Assen, M. A., Pennington, C. R., Verweij,
     L., Elsherif, M., ... & Wicherts, J. (2023). The effectiveness of preregistration
     in psychology: Assessing preregistration strictness and preregistration-study
@@ -1216,7 +1850,7 @@ resources:
   - - More info
     - Deviations
   doi: .na.character
-- id: 37
+- id: 39
   title: 'Van den Akker, O., van Assen, M. A. L. M., Bakker, M., Elsherif, M. M.,
     Wong, T. K., & Wicherts, J. M. (2023, May 19). Preregistration in practice: A
     comparison of preregistered and non-preregistered studies in psychology.  Behaviour
@@ -1224,7 +1858,7 @@ resources:
   tags:
   - More info
   doi: 10.31222/osf.io/fhdbs
-- id: 38
+- id: 40
   title: fmri preregistration template (https://www.psycharchives.org/en/item/eaf562e3-69a7-46a4-925a-05a982ef1a0b)
   tags:
   - - Days
@@ -1232,15 +1866,33 @@ resources:
     - Good practice
     - Pre data collection
   doi: .na.character
-- id: 39
+- id: 41
+  title: fmri preregistration template https://osf.io/6juft/
+  tags:
+  - - Days
+    - Neuroimaging/Brain research
+    - Good practice
+    - Pre data collection
+  doi: .na.character
+- id: 42
   title: https://osf.io/zab38/wiki/home/ (https://osf.io/zab38/)
   tags:
   - Gold standard
   doi: .na.character
-- id: 40
-  title: van ‘t Veer and Giner-Sorolla (2016) (https://www.sciencedirect.com/science/article/pii/S0022103116301925)
+- id: 43
+  title: 'osf: https://osf.io/cte9k'
+  tags:
+  - - Days
+    - Modeling/simulation-based research
+    - Pre data collection
+  doi: .na.character
+- id: 44
+  title: 'van ‘t Veer and Giner-Sorolla (2016) (https://www.sciencedirect.com/science/article/pii/S0022103116301925)
+    ; Links: Gdoc: https://docs.google.com/document/d/1eebh7D4WFIYNmYFAkGK7Y7CdbfM-ANkXRWTK7kJqNgA/edit?usp=sharing
+    ; Word: https://osf.io/ce3hr/ ; OSF: https://osf.io/k5wns/'
   tags:
   - - Days
     - Good practice
     - Pre data collection
+    - Correlational
   doi: .na.character
