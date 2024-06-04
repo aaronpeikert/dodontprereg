@@ -129,11 +129,16 @@ server <- function(input, output, session) {
 
   # Output the filtered datasets
   output$filteredStatements <- DT::renderDT({
-    filtered_statements()
+    filtered_statements() %>%
+      select(id, title) %>%
+      datatable(rownames = FALSE)
   })
 
   output$filteredResources <- DT::renderDT({
-    filtered_resources()
+    filtered_resources() %>%
+      select(id, title, doi) %>%
+      mutate(doi = ifelse(is.na(doi), "", paste0('<a href="https://doi.org/', doi, '">', doi, '</a>'))) %>%
+      datatable(rownames = FALSE, escape = FALSE)
   })
 
   observeEvent(input$submit, {
