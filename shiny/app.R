@@ -5,6 +5,7 @@ library(yaml)
 library(shinysurveys)
 library(tibble)
 library(purrr)
+library(shinythemes)
 
 library(shinysurveys)
 source("fix_shinysurveys.R")
@@ -20,6 +21,7 @@ all_tags <- function(questions){
 }
 
 ui <- fluidPage(
+  theme = shinytheme("readable"),
   tabsetPanel(
     id = "hidden_tabs",
     # Hide the tab values.
@@ -133,14 +135,14 @@ server <- function(input, output, session) {
   # Output the filtered datasets
   output$filteredStatements <- DT::renderDT({
     filtered_statements() %>%
-      select(id, title) %>%
+      select(id, title, details) %>%
       datatable(rownames = FALSE)
   })
 
   output$filteredResources <- DT::renderDT({
     filtered_resources() %>%
       select(id, title, doi) %>%
-      mutate(doi = ifelse(is.na(doi), "", paste0('<a href="https://doi.org/', doi, '">', doi, '</a>'))) %>%
+      mutate(doi = ifelse(is.na(doi), "", paste0('<a href="', doi, '">', doi, '</a>'))) %>%
       datatable(rownames = FALSE, escape = FALSE)
   })
 
