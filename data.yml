@@ -16,3 +16,9 @@ resources:
     - before preregistration
     - minimal
     doi: 10.1234/abcd
+  - id: 2
+    title: Another resource
+    tags:
+    - Hours
+    - Undergraduate
+    doi: 10.1234/abcd
